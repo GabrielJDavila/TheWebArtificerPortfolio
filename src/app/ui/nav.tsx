@@ -24,7 +24,7 @@ export default function Nav() {
     return (
         <div className="flex h-full flex-col md:px-2 ml-auto md:hidden shadow-lg">
             <div className="w-full flex justify-between items-center font-mono p-2">
-                <p className="dark:text-white">Gabriel Davila</p>
+                <img src="/blacklogo.svg" className="w-12"/>
                 <LightDarkMode />
                 <Bars2Icon onClick={handleClick} ref={menuRef as React.RefObject<SVGSVGElement>} className="w-10 text-black hover:bg-slate-600 hover:text-white p-2 rounded ml-1 md:hidden dark:text-white"/>
                 <nav className={`fixed top-14 right-0 left-0 z-10 bg-slate-600 flex grow flex-col justify-between text-center ${openNav ? "inline" : "hidden"} md:flex-col space-x-0 space-y-2 md:hidden px-2 w-full py-2 px-3 rounded font-mono`}>
