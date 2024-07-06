@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Grenze_Gotisch } from "next/font/google";
 import "./globals.css";
 import Nav from "./ui/nav";
 import LightDarkMode from "./ui/colormode";
 
 const inter = Inter({ subsets: ["latin"] });
+const grenze = Grenze_Gotisch({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Web Development Portfolio",
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} dark:bg-zinc-900`}>
+      <body className={`${grenze.className} dark:bg-zinc-900 dark:text-white`}>
         <Nav/>
         {children}
       </body>
