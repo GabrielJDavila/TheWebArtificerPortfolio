@@ -3,6 +3,7 @@ import { Inter, Grenze_Gotisch } from "next/font/google";
 import "./globals.css";
 import Nav from "./ui/nav";
 import LightDarkMode from "./ui/colormode";
+import { Providers } from "./lib/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 const grenze = Grenze_Gotisch({ subsets: ["latin"] })
@@ -21,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${grenze.className} dark:bg-zinc-900 dark:text-white`}>
-        <Nav/>
-        {children}
+        <Providers>
+          <Nav/>
+          {children}
+        </Providers>
       </body>
     </html>
   );
