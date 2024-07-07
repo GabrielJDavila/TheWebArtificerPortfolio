@@ -2,9 +2,10 @@
 import { MoonIcon, SunIcon, SparklesIcon } from "@heroicons/react/24/outline"
 import { useRef, useState, useEffect } from "react"
 import flipColorMode from "../lib/changecolormode"
+import { useColorTheme } from "../lib/ColorModeContext"
 
 export default function LogoColorMode() {
-    const [colorTheme, setTheme] = flipColorMode()
+    const {colorTheme, setColorTheme} = useColorTheme()
     const [logo, setLogo] = useState(false)
 
     useEffect(() => {
@@ -16,10 +17,10 @@ export default function LogoColorMode() {
     }, [colorTheme])
 
     return (
-        <div>
+        <div className="text-center m-auto">
             {logo ?
-                <img src="/twalightmodelogo.png" className="w-10"/> :
-                <img src="/twadarkmodelogo.png" className="w-10"/>
+                <img src="/twadarkmodelogo.png" className="w-48"/> :
+                <img src="/twalightmodelogo.png" className="w-48"/>
             }
         </div>
     )

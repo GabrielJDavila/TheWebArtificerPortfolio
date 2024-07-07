@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 function flipColorMode() {
-    const [theme, setTheme] = useState(
+    const [theme, setColorTheme] = useState(
         typeof window !== "undefined" ? localStorage.theme : "dark"
     )
     const colorTheme = theme === "dark" ? "light" : "dark"
@@ -19,7 +19,7 @@ function flipColorMode() {
         }
     }, [theme])
     console.log(theme)
-    return [colorTheme, setTheme]
+    return [colorTheme, setColorTheme]
 }
 
 export default flipColorMode

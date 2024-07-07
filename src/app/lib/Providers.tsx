@@ -1,5 +1,6 @@
 "use client"
 
+import { ColorThemeProvider } from "./ColorModeContext"
 import { NavProvider } from "./NavContext"
 
 type ProviderProps = {
@@ -7,5 +8,11 @@ type ProviderProps = {
 }
 
 export function Providers({children}: ProviderProps) {
-    return <NavProvider>{children}</NavProvider>
+    return (
+        <NavProvider>
+            <ColorThemeProvider>
+                {children}
+            </ColorThemeProvider>
+        </NavProvider>
+    )
 }

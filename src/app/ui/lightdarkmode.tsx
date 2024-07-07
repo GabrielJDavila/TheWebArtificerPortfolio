@@ -1,0 +1,31 @@
+"use client"
+import { MoonIcon, SunIcon, SparklesIcon } from "@heroicons/react/24/outline"
+import { useRef, useState } from "react"
+import flipColorMode from "../lib/changecolormode"
+import { useColorTheme } from "../lib/ColorModeContext"
+
+export default function LightDarkMode() {
+    // const [colorTheme, setColorTheme] = flipColorMode()
+    const {colorTheme, setColorTheme} = useColorTheme()
+    console.log(colorTheme)
+
+    function handleToggleTheme() {
+        setColorTheme(prevTheme => (prevTheme === "dark" ? "light" : "dark"))
+    }
+    return (
+        <div className="flex flex-row justify-center items-center">
+            {/* {colorTheme === "light" ?
+                <img src="/twalightmodelogo.png" className="w-10"/> :
+                <img src="/twadarkmodelogo.png" className="w-10"/>
+            } */}
+            <div className="flex h-full flex-col md:px-2 md:hidden shadow-lg dark:bg-zinc-800 dark:border-gray-700 dark:border-2 px-3 py-2 rounded-full">
+                {colorTheme === "dark" ?
+                <MoonIcon onClick={handleToggleTheme} className="dark:text-white w-6"/>
+                :
+                <SunIcon onClick={handleToggleTheme} className="text-blue-400 w-6"/>
+                }
+                
+            </div>
+        </div>
+    )
+}
