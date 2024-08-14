@@ -40,7 +40,7 @@ export default function Nav() {
                     <ChevronDownIcon onClick={handleClick} ref={menuRef as React.RefObject<SVGSVGElement>} className={`w-4 text-black rounded md:hidden dark:text-white transition-all ${openNav ? "rotate-180" : "rotate-0"}`}/>
                 </div>
                 <LightDarkMode />
-                <nav className={`fixed top-5 right-0 left-0 z-10 bg-slate-600 dark:bg-zinc-800 dark:border-gray-700 dark:border-2 flex grow flex-col justify-between text-left gap-4 ${openNav ? "inline" : "hidden"} transition-all md:flex-col space-x-0 space-y-2 md:hidden p-8 w-11/12 m-auto rounded-3xl ${grenze.className}`}>
+                <nav className={`fixed top-5 right-0 left-0 z-10 dark:bg-zinc-800 dark:border-gray-700 dark:border-2 flex grow flex-col justify-between text-left gap-4 ${openNav ? "inline" : "hidden"} transition-all md:flex-col space-x-0 space-y-2 md:hidden p-8 w-11/12 m-auto rounded-3xl ${grenze.className}`}>
                     <div className="flex flex-row justify-between items-center">
                         <p className="text-gray-200">Menu</p>
                         <XMarkIcon className="w-6 text-gray-200"/>

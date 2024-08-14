@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${grenze.className} dark:bg-zinc-900 dark:text-white p-4`}>
+      <body className={`${grenze.className} dark:bg-zinc-900 dark:text-white`}>
         <Providers>
           <Nav/>
           {children}
