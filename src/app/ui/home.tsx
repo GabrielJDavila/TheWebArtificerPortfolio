@@ -20,9 +20,9 @@ export default function HomeUi() {
                 <p>I'm Gabriel, I'm a former fitness coach turned web developer. I use my skills to create stunning websites and helpful applications for small businesses.</p>
                 <Link href="#" className="bg-sky-500 w-24 m-auto p-2 rounded-full hover:bg-sky-600">see my work</Link>
             </div>
-            <section className="flex relative bg-zinc-800 w-full h-96 text-center justify-center mt-12">
-                <div className="absolute -top-8 bg-zinc-800 w-full h-16 skew-y-6 z-0"></div>
-                <h2 className="z-20">Elevate Your Business</h2>
+            <section className="flex relative bg-zinc-800 w-full h-96 text-center justify-center p-4">
+                {/* <div className="absolute -top-12 bg-zinc-800 w-full h-32 skew-y-6 z-0"></div> */}
+                <h2 className="z-20 my-4">Elevate Your Business with responsive websites.</h2>
             </section>
         </main>
     )
