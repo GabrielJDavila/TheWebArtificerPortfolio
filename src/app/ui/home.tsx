@@ -18,11 +18,30 @@ export default function HomeUi() {
             <div className="flex flex-col gap-8 px-8">
                 <h1 className="text-3xl font-bold">Craftsman of code, creating stunning and performative websites.</h1>
                 <p>I'm Gabriel, I'm a former fitness coach turned web developer. I use my skills to create stunning websites and helpful applications for small businesses.</p>
-                <Link href="#" className="bg-sky-500 w-24 m-auto p-2 rounded-full hover:bg-sky-600">see my work</Link>
+                <Link href="#" className="bg-green-600 w-24 m-auto p-2 rounded-full hover:bg-sky-600">see my work</Link>
             </div>
-            <section className="flex relative bg-zinc-800 w-full h-96 text-center justify-center p-4">
+            <section className="flex flex-col bg-zinc-800 w-full text-center justify-center p-4">
                 {/* <div className="absolute -top-12 bg-zinc-800 w-full h-32 skew-y-6 z-0"></div> */}
                 <h2 className="z-20 my-4">Elevate Your Business with responsive websites.</h2>
+                <div className="flex flex-row flex-wrap gap-12 justify-center items-center">
+                    <div>
+                        <img src="/WA_logos_1.png"/>
+                        <p>description goes here</p>
+                    </div>
+                    <div>
+                        <img src="/WA_logos_2.png"/>
+                        <p>description goes here</p>
+                    </div>
+                    <div>
+                        <img src="/WA_logos_3.png"/>
+                        <p>description goes here</p>
+                    </div>
+                    <div>
+                        <img src="/WA_logos_4.png"/>
+                        <p>description goes here</p>
+                    </div>
+                    
+                </div>
             </section>
         </main>
     )
