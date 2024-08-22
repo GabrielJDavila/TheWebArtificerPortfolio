@@ -8,7 +8,7 @@ import Link from "next/link"
 const inter = Inter({ subsets: ["latin"], weight: "200" });
 const mont = Montserrat({subsets: ["latin"], weight: "200"})
 
-export default function AboutUi() {
+export default function AboutHomeUi() {
    const {colorTheme, setColorTheme} = useColorTheme()
    console.log(colorTheme)
 

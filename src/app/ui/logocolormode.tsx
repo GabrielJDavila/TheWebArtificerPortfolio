@@ -19,8 +19,8 @@ export default function LogoColorMode() {
     return (
         <div className="text-center m-auto">
             {logo ?
-                <img src="/twadarkmodelogo.png" className="w-48"/> :
-                <img src="/twalightmodelogo.png" className="w-48"/>
+                <img src="/twadarkmodelogo.png" className="w-60"/> :
+                <img src="/twalightmodelogo.png" className="w-60"/>
             }
         </div>
     )
