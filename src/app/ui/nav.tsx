@@ -73,8 +73,8 @@ export default function Nav() {
                     {openNav ?
                     <>
                     <div className="flex flex-row justify-between items-center">
-                        <p className="text-zinc-800">Menu</p>
-                        <XMarkIcon className="w-6 text-gray-200"/>
+                        <p className="text-zinc-600">Menu</p>
+                        <XMarkIcon className="w-6 text-zinc-600"/>
                     </div>
                     <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg">Home</a>
                     <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg">Projects</a>
