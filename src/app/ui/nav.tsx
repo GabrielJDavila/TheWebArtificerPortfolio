@@ -1,16 +1,27 @@
 "use client"
 import { Bars2Icon, ChevronDownIcon, XMarkIcon } from "@heroicons/react/24/outline"
-import { useEffect, useRef } from "react"
+import { useState, useEffect, useRef } from "react"
 import LightDarkMode from "./lightdarkmode"
 import flipColorMode from "../lib/changecolormode"
 import { Grenze_Gotisch } from "next/font/google"
 import { useNav } from "../lib/NavContext"
+import { useColorTheme } from "../lib/ColorModeContext"
 const grenze = Grenze_Gotisch({ subsets: ["latin"] })
 
 export default function Nav() {
     const {openNav, setOpenNav} = useNav()
     const menuRef = useRef<HTMLElement | null>(null)
+    const {colorTheme, setColorTheme} = useColorTheme()
+    const [lightMode, setLightMode] = useState(false)
 
+    useEffect(() => {
+        if(colorTheme === "light") {
+            setLightMode(true)
+        } else {
+            setLightMode(false)
+        }
+    }, [colorTheme])
+    console.log(lightMode)
     function handleClick() {
         setOpenNav((prev: boolean) => !prev)
         console.log("clicked nav bars")
@@ -35,11 +46,12 @@ export default function Nav() {
     return (
         <div className="flex h-full flex-col md:px-2 ml-auto md:hidden">
             <div className="w-full flex justify-center items-center font-mono p-2 gap-4">
-                <div className="flex h-full flex-row items-center md:px-2 ml-auto md:hidden shadow-lg dark:bg-zinc-800 dark:border-gray-700 dark:border-2 px-4 py-2 rounded-full gap-2">
+                <div className="flex h-full flex-row items-center md:px-2 ml-auto md:hidden shadow-lg dark:bg-zinc-800 border=gray-200 dark:border-gray-700 border-2 px-4 py-2 rounded-full gap-2">
                     <p>Menu</p>
                     <ChevronDownIcon onClick={handleClick} ref={menuRef as React.RefObject<SVGSVGElement>} className={`w-4 text-black rounded md:hidden dark:text-white transition-all ${openNav ? "rotate-180" : "rotate-0"}`}/>
                 </div>
                 <LightDarkMode />
+                {!lightMode ?
                 <nav className={`fixed top-5 right-0 left-0 z-10 ${openNav ? "dark:border-gray-700" : "border-none"} ${openNav ? "dark:border-2" : "border-none"} dark:bg-zinc-800 flex grow flex-col justify-between text-left gap-4 ${openNav ? "h-96" : "h-0"} transition-all md:flex-col space-x-0 space-y-2 md:hidden ${openNav? "p-8" : "p-0"} w-11/12 m-auto rounded-3xl ${grenze.className}`}>
                     {openNav ?
                     <>
@@ -56,6 +68,24 @@ export default function Nav() {
                     : undefined
                     }
                 </nav>
+                :
+                <nav className={`fixed top-5 right-0 left-0 z-10 ${openNav ? "border-black-700" : "border-none"} ${openNav ? "border-2" : "border-none"} bg-white flex grow flex-col justify-between text-left gap-4 ${openNav ? "h-96" : "h-0"} transition-all md:flex-col space-x-0 space-y-2 md:hidden ${openNav? "p-8" : "p-0"} w-11/12 m-auto rounded-3xl ${grenze.className} shadow-lg`}>
+                    {openNav ?
+                    <>
+                    <div className="flex flex-row justify-between items-center">
+                        <p className="text-zinc-800">Menu</p>
+                        <XMarkIcon className="w-6 text-gray-200"/>
+                    </div>
+                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg">Home</a>
+                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg">Projects</a>
+                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg">About</a>
+                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg">Toolbox</a>
+                    <a className="text-black cursor-pointer text-lg">Contact</a>
+                    </>
+                    : undefined
+                    }
+                </nav>
+                }
             </div>
             
         </div>

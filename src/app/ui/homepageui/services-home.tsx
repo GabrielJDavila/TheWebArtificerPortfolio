@@ -7,10 +7,11 @@ export default function ServicesHomeUi() {
         <section className="flex flex-col w-full text-center justify-center px-4 py-8">
                 {/* <div className="absolute -top-12 bg-zinc-800 w-full h-32 skew-y-6 z-0"></div> */}
                 <h2 className="z-20 my-4 text-xl">Do what you do best.</h2>
-                <p className={`${mont.className}`}>Running a business is tough work. There are a million and one things to think and work on, and you don't need to add the stress of building and managing your website.</p>
-                <br></br>
-                <p className={`${mont.className}`}>That is where my specialty lies: I'll handle the tech, you handle what you do best - running your business and helping your customers.</p>
-                <br></br>
+                <div className="text-left mb-4">
+                    <p className={`${mont.className}`}>Running a business is tough work. There are a million and one things to think and work on, and you don't need to add the stress of building and managing your website.</p>
+                    <br></br>
+                    <p className={`${mont.className}`}>That is where my specialty lies: I'll handle the tech, you handle what you do best - running your business and helping your customers.</p>
+                </div>
                 <div className="flex flex-col gap-4 justify-left text-left mt-8">
                     <div className="flex flex-col justify-items-start gap-4 text-left dark:bg-zinc-800 px-4 py-8 rounded-3xl">
                         <div className="flex flex-row items-center gap-4">

@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "./ui/nav";
 import LightDarkMode from "./ui/lightdarkmode";
 import { Providers } from "./lib/Providers";
+import Footer from "./ui/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const grenze = Grenze_Gotisch({ subsets: ["latin"] })
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Providers>
           <Nav/>
           {children}
+          <Footer/>
         </Providers>
       </body>
     </html>
