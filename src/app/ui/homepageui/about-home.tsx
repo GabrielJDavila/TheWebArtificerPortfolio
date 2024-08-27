@@ -19,7 +19,7 @@ export default function AboutHomeUi() {
                 <img
                     src="blackshirtvv1.png"
                     alt="picture of Gabriel Davila, wearing a black collared shirt against a beige background."
-                    className="flex flex-col w-1/2 lg:w-1/4 text-center justify-center items-center m-auto rounded-3xl rotate-3"
+                    className="flex flex-col w-1/2 lg:w-1/4 text-center justify-center items-center m-auto rounded-3xl rotate-3 shadow"
                 />
                 <p className={`${mont.className} dark:text-white text-left`}>I'm Gabriel, and I'm not your traditional developer. I have 7+ years in the fitness industry, developing excellent customer service and soft skills.
                     In 2019 I learned how to code, and fell in love with the creative and problem-solving nature of web & software development.
