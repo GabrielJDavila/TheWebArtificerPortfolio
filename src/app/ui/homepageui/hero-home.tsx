@@ -17,7 +17,7 @@ export default function HeroHomeUi() {
             
             <div className="flex flex-col gap-8 px-8">
                 <h1 className="text-3xl font-bold">Craftsman of code, creating stunning and performative websites.</h1>
-                <Link href="#projects-home" className="bg-sky-600 w-24 m-auto p-2 rounded-full hover:bg-sky-600">see my work</Link>
+                <Link href="#projects-home" className="bg-sky-600 w-24 m-auto p-2 rounded-full hover:bg-sky-600 text-white">see my work</Link>
             </div>
             
         </main>
