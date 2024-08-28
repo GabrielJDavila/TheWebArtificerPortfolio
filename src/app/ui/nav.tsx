@@ -67,9 +67,9 @@ export default function Nav() {
                     className={`fixed top-5 right-0 left-0 z-50 ${openNav ? "dark:border-gray-700" : "border-none"} ${openNav ? "dark:border-2" : "border-none"} 
                     dark:bg-zinc-800 flex grow flex-col justify-between text-left gap-4 ${openNav ? "h-96" : "h-0"} transition-all space-x-0 space-y-2 
                     ${openNav? "p-8" : "p-0"} w-11/12 m-auto rounded-3xl ${grenze.className}
-                    md:flex-row md:h-auto md:top-0 md:justify-center md:text-center`}
+                    md:flex-row md:h-auto md:justify-center md:text-center`}
                 >
-                    {openNav && windowWidth < 768 ?
+                    {openNav && windowWidth < 768 &&
                     <>
                     <div className="flex flex-row justify-between items-center md:hidden">
                         <p className="text-gray-200">Menu</p>
@@ -81,8 +81,9 @@ export default function Nav() {
                     <a className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Toolbox</a>
                     <a className="text-white cursor-pointer hover:underline hover:underline-offset-8 text-lg">Contact</a>
                     </>
-                    :
-                    <div className="flex justify-center gap-20 p-4 bg-zinc-800">
+                    }
+                    {windowWidth >= 768 &&
+                    <div className="flex justify-center gap-20 p-4">
 
                         <a className="hidden text-white cursor-pointer text-lg md:block m-0">Home</a>
                         <a className="hidden text-white cursor-pointer text-lg md:block m-0">Projects</a>
