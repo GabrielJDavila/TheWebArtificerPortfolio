@@ -25,7 +25,7 @@ export default function AboutHomeUi() {
                     <p className={`${mont.className} dark:text-white text-left`}>I'm Gabriel, and I'm not your traditional developer. I have 7+ years in the fitness industry, developing excellent customer service and soft skills.
                         In 2019 I learned how to code, and fell in love with the creative and problem-solving nature of web & software development.
                         I now use my unique skillset to create stunning websites and helpful applications for small businesses, all while providing an unparalleled customer experience.</p>
-                    <Link href="#" className="bg-sky-600 text-white w-24 mx-auto my-8 p-2 rounded-full hover:bg-sky-700">Read more</Link>
+                    <Link href="/about" className="bg-sky-600 text-white w-24 mx-auto my-8 p-2 rounded-full hover:bg-sky-700">Read more</Link>
                 </div>
             </div>
             

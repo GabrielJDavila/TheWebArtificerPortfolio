@@ -8,6 +8,7 @@ import { useNav } from "../lib/NavContext"
 import { useColorTheme } from "../lib/ColorModeContext"
 import { listeners } from "process"
 const grenze = Grenze_Gotisch({ subsets: ["latin"] })
+import Link from "next/link"
 
 export default function Nav() {
     const {openNav, setOpenNav} = useNav()
@@ -80,11 +81,11 @@ export default function Nav() {
                         <p className="text-gray-200">Menu</p>
                         <XMarkIcon className="w-6 text-gray-200"/>
                     </div>
-                    <a className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Home</a>
-                    <a className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Projects</a>
-                    <a className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">About</a>
-                    <a className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Toolbox</a>
-                    <a className="text-white cursor-pointer hover:underline hover:underline-offset-8 text-lg">Contact</a>
+                    <Link href="/" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Home</Link>
+                    <Link href="#" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Projects</Link>
+                    <Link href="/about" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">About</Link>
+                    <Link href="#" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Toolbox</Link>
+                    <Link href="#" className="text-white cursor-pointer hover:underline hover:underline-offset-8 text-lg">Contact</Link>
                     </>
                     }
                     {windowWidth >= 768 &&
