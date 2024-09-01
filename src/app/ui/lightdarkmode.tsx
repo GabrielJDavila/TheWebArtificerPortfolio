@@ -18,7 +18,7 @@ export default function LightDarkMode() {
                 <img src="/twalightmodelogo.png" className="w-10"/> :
                 <img src="/twadarkmodelogo.png" className="w-10"/>
             } */}
-            <div className="flex h-full flex-col md:px-2 md:hidden shadow-lg dark:bg-zinc-800 border-gray-200 dark:border-gray-700 border-2 px-3 py-2 rounded-full">
+            <div className="flex h-full flex-col md:px-2 shadow-lg dark:bg-zinc-800 border-gray-200 dark:border-gray-700 border-2 px-3 py-2 rounded-full">
                 {colorTheme === "dark" ?
                 <MoonIcon onClick={handleToggleTheme} className="dark:text-white w-6"/>
                 :

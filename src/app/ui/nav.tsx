@@ -28,11 +28,16 @@ export default function Nav() {
         if(typeof window !== "undefined") {
             const handleResize = () => setWindowWidth(window.innerWidth)
             window.addEventListener("resize", handleResize)
-
             return () => window.removeEventListener("resize", handleResize)
         }
     }, [])
-    console.log(windowWidth)
+
+    useEffect(() => {
+        if(windowWidth >= 768) {
+            setOpenNav(false)
+        }
+    }, [windowWidth])
+    
     function handleClick() {
         setOpenNav((prev: boolean) => !prev)
         console.log("clicked nav bars")
@@ -61,12 +66,12 @@ export default function Nav() {
                     <p>Menu</p>
                     <ChevronDownIcon onClick={handleClick} ref={menuRef as React.RefObject<SVGSVGElement>} className={`w-4 text-black rounded md:hidden dark:text-white transition-all ${openNav ? "rotate-180" : "rotate-0"}`}/>
                 </div>
-                <LightDarkMode />
+                {windowWidth < 768 && <LightDarkMode />}
                 {!lightMode ?
                 <nav
                     className={`fixed top-5 right-0 left-0 z-50 ${openNav ? "dark:border-gray-700" : "border-none"} ${openNav ? "dark:border-2" : "border-none"} 
                     dark:bg-zinc-800 flex grow flex-col justify-between text-left gap-4 ${openNav ? "h-96" : "h-0"} transition-all space-x-0 space-y-2 
-                    ${openNav? "p-8" : "p-0"} w-11/12 m-auto rounded-3xl ${grenze.className}
+                    ${openNav? "p-8" : "p-0"} w-11/12 max-w-4xl m-auto rounded-3xl ${grenze.className}
                     md:flex-row md:h-auto md:justify-center md:text-center`}
                 >
                     {openNav && windowWidth < 768 &&
@@ -83,13 +88,16 @@ export default function Nav() {
                     </>
                     }
                     {windowWidth >= 768 &&
-                    <div className="flex justify-center gap-20 p-4">
+                    <div className="flex w-full m-auto justify-center dark:bg-zinc-800 rounded-3xl">
+                        <div className="flex w-full h-full m-auto justify-center items-center gap-20 p-4 dark:border-gray-700 dark:border-2 rounded-3xl">
 
-                        <a className="hidden text-white cursor-pointer text-lg md:block m-0">Home</a>
-                        <a className="hidden text-white cursor-pointer text-lg md:block m-0">Projects</a>
-                        <a className="hidden text-white cursor-pointer text-lg md:block">About</a>
-                        <a className="hidden text-white cursor-pointer text-lg md:block">Toolbox</a>
-                        <a className="hidden text-white cursor-pointer text-lg md:block">Contact</a>
+                            <a className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</a>
+                            <a className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</a>
+                            <a className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">About</a>
+                            <a className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Toolbox</a>
+                            <a className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Contact</a>
+                            <LightDarkMode />
+                        </div>
                     </div>
                     }
                 </nav>
