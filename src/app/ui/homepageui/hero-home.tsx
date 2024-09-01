@@ -8,7 +8,7 @@ export default function HeroHomeUi() {
    const {colorTheme, setColorTheme} = useColorTheme()
    console.log(colorTheme)
     return (
-        <main className="flex flex-col gap-28 mt-4 mb-20">
+        <main className="flex flex-col gap-10 mt-4 mb-20 md:mt-20">
             <LogoColorMode />
             {/* {colorTheme ?
                 <img src="/twalightmodelogo.png" className="w-10"/> :

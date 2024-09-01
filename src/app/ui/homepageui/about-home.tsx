@@ -13,7 +13,7 @@ export default function AboutHomeUi() {
    console.log(colorTheme)
 
     return (
-        <section className="flex flex-col gap-12 mt-20 bg-slate-100 dark:bg-zinc-800 p-8">
+        <section className="flex flex-col gap-12 my-20 bg-slate-100 dark:bg-zinc-800 p-8">
             <h2 className="my-4 text-2xl">About Me</h2>
             <div className="flex flex-col lg:flex-row gap-8 lg:3/4 items-center">
                 <img

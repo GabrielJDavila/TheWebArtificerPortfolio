@@ -7,7 +7,7 @@ export default function ServicesHomeUi() {
         <section className="flex flex-col w-full text-center justify-center items-center px-4 py-8">
                 {/* <div className="absolute -top-12 bg-zinc-800 w-full h-32 skew-y-6 z-0"></div> */}
                 <h2 className="z-20 my-4 text-2xl">Do what you do best.</h2>
-                <div className="text-left mb-4 p-4">
+                <div className="text-left mb-4 p-4 md:text-center md:max-w-3xl">
                     <p className={`${mont.className}`}>Running a business is tough work. There are a million and one things to think and work on, and you don't need to add the stress of building and managing your website.</p>
                     <br></br>
                     <p className={`${mont.className}`}>That is where my specialty lies: I'll handle the tech, you handle what you do best - running your business and helping your customers.</p>
