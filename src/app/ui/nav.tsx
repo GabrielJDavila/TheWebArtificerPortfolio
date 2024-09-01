@@ -62,7 +62,7 @@ export default function Nav() {
     return (
         <div className="flex h-full flex-col md:px-2 ml-auto">
             <div className="w-full flex justify-center items-center font-mono p-2 gap-4">
-                <div className="flex h-full flex-row items-center md:px-2 ml-auto md:hidden shadow-lg dark:bg-zinc-800 border=gray-200 dark:border-gray-700 border-2 px-4 py-2 rounded-full gap-2">
+                <div className="flex h-full flex-row items-center md:px-2 ml-auto md:hidden shadow-lg dark:bg-zinc-800 border-gray-200 dark:border-gray-700 border-2 px-4 py-2 rounded-full gap-2">
                     <p>Menu</p>
                     <ChevronDownIcon onClick={handleClick} ref={menuRef as React.RefObject<SVGSVGElement>} className={`w-4 text-black rounded md:hidden dark:text-white transition-all ${openNav ? "rotate-180" : "rotate-0"}`}/>
                 </div>
@@ -102,20 +102,37 @@ export default function Nav() {
                     }
                 </nav>
                 :
-                <nav className={`fixed top-5 right-0 left-0 z-10 ${openNav ? "border-black-700" : "border-none"} ${openNav ? "border-2" : "border-none"} bg-white flex grow flex-col justify-between text-left gap-4 ${openNav ? "h-96" : "h-0"} transition-all md:flex-col space-x-0 space-y-2 md:hidden ${openNav? "p-8" : "p-0"} w-11/12 m-auto rounded-3xl ${grenze.className} shadow-lg`}>
-                    {openNav ?
+                <nav
+                    className={`fixed top-5 right-0 left-0 z-50 ${openNav ? "border-gray-200" : "border-none"} ${openNav ? "border-2" : "border-none"} 
+                    bg-white flex grow flex-col justify-between text-left gap-4 ${openNav ? "h-96" : "h-0"} transition-all space-x-0 space-y-2 
+                    ${openNav? "p-8" : "p-0"} w-11/12 max-w-4xl m-auto rounded-3xl ${grenze.className}
+                    md:flex-row md:h-auto md:justify-center md:text-center`}
+                >
+                    {openNav && windowWidth < 768 &&
                     <>
                     <div className="flex flex-row justify-between items-center">
                         <p className="text-zinc-600">Menu</p>
                         <XMarkIcon className="w-6 text-zinc-600"/>
                     </div>
-                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg">Home</a>
-                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg">Projects</a>
-                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg">About</a>
-                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg">Toolbox</a>
+                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Home</a>
+                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Projects</a>
+                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">About</a>
+                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Toolbox</a>
                     <a className="text-black cursor-pointer text-lg">Contact</a>
                     </>
-                    : undefined
+                    }
+                    {windowWidth >= 768 &&
+                    <div className="flex w-full m-auto justify-center dark:bg-zinc-800 rounded-3xl">
+                        <div className="flex w-full h-full m-auto justify-center items-center gap-20 p-4 border-gray-200 border-2 shadow-md rounded-3xl">
+
+                            <a className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</a>
+                            <a className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</a>
+                            <a className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">About</a>
+                            <a className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Toolbox</a>
+                            <a className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Contact</a>
+                            <LightDarkMode />
+                        </div>
+                    </div>
                     }
                 </nav>
                 }
