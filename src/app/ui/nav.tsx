@@ -34,6 +34,12 @@ export default function Nav() {
     }, [])
 
     useEffect(() => {
+        document.addEventListener("click", handleClickOutside)
+        return () => {
+            document.removeEventListener("click", handleClickOutside)
+        }
+    }, [])
+    useEffect(() => {
         if(windowWidth >= 768) {
             setOpenNav(false)
         }
@@ -59,7 +65,7 @@ export default function Nav() {
     //     }
     // }, [openNav])
 
-    document.addEventListener("click", handleClickOutside)
+    // document.addEventListener("click", handleClickOutside)
     return (
         <div className="flex h-full flex-col md:px-2 ml-auto">
             <div className="w-full flex justify-center items-center font-mono p-2 gap-4">
@@ -82,21 +88,21 @@ export default function Nav() {
                         <XMarkIcon className="w-6 text-gray-200"/>
                     </div>
                     <Link href="/" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Home</Link>
-                    <Link href="#" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Projects</Link>
+                    <Link href="#projects" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Projects</Link>
                     <Link href="/about" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">About</Link>
-                    <Link href="#" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Toolbox</Link>
-                    <Link href="#" className="text-white cursor-pointer hover:underline hover:underline-offset-8 text-lg">Contact</Link>
+                    <Link href="#skills" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Toolbox</Link>
+                    <Link href="#contact" className="text-white cursor-pointer hover:underline hover:underline-offset-8 text-lg">Contact</Link>
                     </>
                     }
                     {windowWidth >= 768 &&
                     <div className="flex w-full m-auto justify-center dark:bg-zinc-800 rounded-3xl">
                         <div className="flex w-full h-full m-auto justify-center items-center gap-20 p-4 dark:border-gray-700 dark:border-2 rounded-3xl">
 
-                            <a className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</a>
-                            <a className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</a>
-                            <a className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">About</a>
-                            <a className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Toolbox</a>
-                            <a className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Contact</a>
+                            <Link href="/" className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</Link>
+                            <Link href="#projects" className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</Link>
+                            <Link href="/about" className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">About</Link>
+                            <Link href="#skills" className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Toolbox</Link>
+                            <Link href="#contact" className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Contact</Link>
                             <LightDarkMode />
                         </div>
                     </div>
@@ -115,22 +121,22 @@ export default function Nav() {
                         <p className="text-zinc-600">Menu</p>
                         <XMarkIcon className="w-6 text-zinc-600"/>
                     </div>
-                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Home</a>
-                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Projects</a>
-                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">About</a>
-                    <a className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Toolbox</a>
-                    <a className="text-black cursor-pointer text-lg">Contact</a>
+                    <Link href="/" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Home</Link>
+                    <Link href="#projects" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Projects</Link>
+                    <Link href="/about" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">About</Link>
+                    <Link href="#skills" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Toolbox</Link>
+                    <Link href="#contact" className="text-black cursor-pointer text-lg">Contact</Link>
                     </>
                     }
                     {windowWidth >= 768 &&
                     <div className="flex w-full m-auto justify-center dark:bg-zinc-800 rounded-3xl">
                         <div className="flex w-full h-full m-auto justify-center items-center gap-20 p-4 border-gray-200 border-2 shadow-md rounded-3xl">
 
-                            <a className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</a>
-                            <a className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</a>
-                            <a className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">About</a>
-                            <a className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Toolbox</a>
-                            <a className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Contact</a>
+                            <Link href="/" className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</Link>
+                            <Link href="#projects" className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</Link>
+                            <Link href="/about" className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">About</Link>
+                            <Link href="#skills" className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Toolbox</Link>
+                            <Link href="#contact" className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Contact</Link>
                             <LightDarkMode />
                         </div>
                     </div>
