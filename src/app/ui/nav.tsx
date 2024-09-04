@@ -81,7 +81,7 @@ export default function Nav() {
                     <Link href="/" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Home</Link>
                     <Link href="#projects" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Projects</Link>
                     <Link href="/about" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">About</Link>
-                    <Link href="#skills" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Toolbox</Link>
+                    <Link href="#skills" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Services</Link>
                     <Link href="#contact" className="text-white cursor-pointer hover:underline hover:underline-offset-8 text-lg">Contact</Link>
                     </>
                     }
@@ -92,7 +92,7 @@ export default function Nav() {
                             <Link href="/" className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</Link>
                             <Link href="#projects" className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</Link>
                             <Link href="/about" className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">About</Link>
-                            <Link href="#skills" className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Toolbox</Link>
+                            <Link href="#skills" className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Services</Link>
                             <Link href="#contact" className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Contact</Link>
                             <LightDarkMode />
                         </div>
@@ -115,7 +115,7 @@ export default function Nav() {
                     <Link href="/" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Home</Link>
                     <Link href="#projects" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Projects</Link>
                     <Link href="/about" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">About</Link>
-                    <Link href="#skills" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Toolbox</Link>
+                    <Link href="#skills" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Services</Link>
                     <Link href="#contact" className="text-black cursor-pointer text-lg">Contact</Link>
                     </>
                     }
@@ -126,7 +126,7 @@ export default function Nav() {
                             <Link href="/" className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</Link>
                             <Link href="#projects" className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</Link>
                             <Link href="/about" className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">About</Link>
-                            <Link href="#skills" className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Toolbox</Link>
+                            <Link href="#skills" className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Services</Link>
                             <Link href="#contact" className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Contact</Link>
                             <LightDarkMode />
                         </div>
