@@ -57,15 +57,6 @@ export default function Nav() {
         }
     }
 
-    // useEffect(() => {
-    //     if(openNav && !document.body.classList.contains("blur-sm")) {
-    //         document.body.classList.add("blur-sm")
-    //     } else {
-    //         document.body.classList.remove("blur-sm")
-    //     }
-    // }, [openNav])
-
-    // document.addEventListener("click", handleClickOutside)
     return (
         <div className="flex h-full flex-col md:px-2 ml-auto">
             <div className="w-full flex justify-center items-center font-mono p-2 gap-4">
