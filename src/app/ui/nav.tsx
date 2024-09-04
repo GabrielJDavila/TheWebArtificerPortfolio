@@ -79,7 +79,7 @@ export default function Nav() {
                         <XMarkIcon className="w-6 text-gray-200"/>
                     </div>
                     <Link href="/" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Home</Link>
-                    <Link href="#projects" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Projects</Link>
+                    <Link href="/#projects-home" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Projects</Link>
                     <Link href="/about" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">About</Link>
                     <Link href="#skills" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Services</Link>
                     <Link href="#contact" className="text-white cursor-pointer hover:underline hover:underline-offset-8 text-lg">Contact</Link>
@@ -90,7 +90,7 @@ export default function Nav() {
                         <div className="flex w-full h-full m-auto justify-center items-center gap-20 p-4 dark:border-gray-700 dark:border-2 rounded-3xl">
 
                             <Link href="/" className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</Link>
-                            <Link href="#projects" className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</Link>
+                            <Link href="/#projects-home" className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</Link>
                             <Link href="/about" className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">About</Link>
                             <Link href="#skills" className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Services</Link>
                             <Link href="#contact" className="hidden text-white cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Contact</Link>
@@ -113,7 +113,7 @@ export default function Nav() {
                         <XMarkIcon className="w-6 text-zinc-600"/>
                     </div>
                     <Link href="/" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Home</Link>
-                    <Link href="#projects" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Projects</Link>
+                    <Link href="/#projects-home" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Projects</Link>
                     <Link href="/about" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">About</Link>
                     <Link href="#skills" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Services</Link>
                     <Link href="#contact" className="text-black cursor-pointer text-lg">Contact</Link>
@@ -124,7 +124,7 @@ export default function Nav() {
                         <div className="flex w-full h-full m-auto justify-center items-center gap-20 p-4 border-gray-200 border-2 shadow-md rounded-3xl">
 
                             <Link href="/" className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</Link>
-                            <Link href="#projects" className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</Link>
+                            <Link href="/#projects-home" className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</Link>
                             <Link href="/about" className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">About</Link>
                             <Link href="#skills" className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Services</Link>
                             <Link href="#contact" className="hidden text-black cursor-pointer text-lg md:block hover:underline hover:underline-offset-8">Contact</Link>
