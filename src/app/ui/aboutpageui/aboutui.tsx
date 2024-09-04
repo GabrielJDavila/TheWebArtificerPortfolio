@@ -33,8 +33,8 @@ export default function AboutPageUi() {
             </div>
 
             <div className="text-left lg:w-full">
-                <h1 className="my-4 text-2xl">About Me</h1>
-                <p className={`${mont.className} dark:text-white text-left`}>I'm Gabriel, and I'm not your traditional developer. I started my career in the fitness industry as a personal trainer. As a trainer, i got to meet so many different types of people, and learned so much. I developed excellent skills
+                <h1 className="my-4 text-2xl">Hi, I'm Gabriel.</h1>
+                <p className={`${mont.className} dark:text-white text-left`}>I'm not your traditional developer. I started my career in the fitness industry as a personal trainer. As a trainer, I got to meet so many different types of people, and learned so much. I developed excellent skills
                     such as customer service, sales, coaching, leadership qualities, and more. While I loved training, I had a certain creative and analytical itch that needed to be scratched.
                 </p>
                 <br></br>
@@ -99,8 +99,8 @@ export default function AboutPageUi() {
             </div>
 
             <div className="text-left lg:w-full lg:order-first">
-                <h1 className="my-4 text-2xl">About Me</h1>
-                <p className={`${mont.className} dark:text-white text-left`}>I'm Gabriel, and I'm not your traditional developer. I started my career in the fitness industry as a personal trainer. As a trainer, i got to meet so many different types of people, and learned so much. I developed excellent skills
+                <h1 className="my-4 text-2xl">Hi, I'm Gabriel.</h1>
+                <p className={`${mont.className} dark:text-white text-left`}>I'm not your traditional developer. I started my career in the fitness industry as a personal trainer. As a trainer, I got to meet so many different types of people, and learned so much. I developed excellent skills
                     such as customer service, sales, coaching, leadership qualities, and more. While I loved training, I had a certain creative and analytical itch that needed to be scratched.
                 </p>
                 <br></br>
