@@ -5,8 +5,8 @@ const mont = Montserrat({subsets: ["latin"], weight: ["200", "300"]})
 
 export default function ProjectsHomeUi() {
     return (
-        <section className="px-4 max-w-5xl">
-            <h2 id="projects-home" className="mb-8 text-2xl">Portfolio</h2>
+        <section id="projects-home" className="px-4 max-w-5xl">
+            <h2 className="mb-8 text-2xl">Portfolio</h2>
             <div className="flex flex-wrap justify-center gap-4">
 
                 <Link
