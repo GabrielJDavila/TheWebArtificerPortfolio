@@ -1,4 +1,5 @@
 import { Montserrat } from "next/font/google"
+import Link from "next/link"
 
 const mont = Montserrat({subsets: ["latin"], weight: ["200", "300"]})
 
@@ -25,6 +26,7 @@ export default function ServicesHomeUi() {
                             <li className={`${mont.className}`}>Systemizes your business processes.</li>
                             <li className={`${mont.className}`}>Automates time-consuming activities.</li>
                         </ul>
+                        <Link href="/service-one"></Link>
                     </div>
                     <div className="flex flex-col justify-items-start gap-4 text-left border-4 shadow-lg bg-slate-100 dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl max-w-md">
                         <div className="flex flex-row items-center gap-4">
