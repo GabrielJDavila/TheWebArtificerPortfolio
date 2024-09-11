@@ -69,7 +69,7 @@ export default function Nav() {
                 <nav
                     className={`fixed z-40 top-2 right-0 left-0 z-50 ${openNav ? "dark:border-gray-700" : "border-none"} ${openNav ? "dark:border-2" : "border-none"} 
                     dark:bg-zinc-800 flex grow flex-col justify-between text-left gap-4 ${openNav ? "h-96" : "h-0"} transition-all space-x-0 space-y-2 
-                    ${openNav? "p-8" : "p-0"} w-11/12 max-w-4xl m-auto rounded-3xl ${grenze.className}
+                    ${openNav? "p-8" : "p-0"} w-11/12 max-w-2xl m-auto rounded-3xl ${grenze.className}
                     md:flex-row md:h-auto md:justify-center md:text-center`}
                 >
                     {openNav && windowWidth < 768 &&
@@ -86,8 +86,8 @@ export default function Nav() {
                     </>
                     }
                     {windowWidth >= 768 &&
-                    <div className="flex w-full m-auto justify-center dark:bg-zinc-800 rounded-3xl">
-                        <div className="flex w-full h-full m-auto justify-center items-center gap-20 p-4 dark:border-gray-700 dark:border-2 rounded-3xl">
+                    <div className="flex w-full max-w-2xl m-auto justify-center dark:bg-zinc-800 rounded-3xl">
+                        <div className="flex w-full h-full m-auto justify-center items-center gap-12 p-2 dark:border-gray-700 dark:border-2 rounded-3xl">
 
                             <Link href="/" className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</Link>
                             <Link href="/#projects-home" className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</Link>
@@ -101,9 +101,9 @@ export default function Nav() {
                 </nav>
                 :
                 <nav
-                    className={`fixed top-5 right-0 left-0 z-50 ${openNav ? "border-gray-200" : "border-none"} ${openNav ? "border-2" : "border-none"} 
+                    className={`fixed top-2 right-0 left-0 z-50 ${openNav ? "border-gray-200" : "border-none"} ${openNav ? "border-2" : "border-none"} 
                     bg-white flex grow flex-col justify-between text-left gap-4 ${openNav ? "h-96" : "h-0"} transition-all space-x-0 space-y-2 
-                    ${openNav? "p-8" : "p-0"} w-11/12 max-w-4xl m-auto rounded-3xl ${grenze.className}
+                    ${openNav? "p-8" : "p-0"} w-11/12 max-w-2xl m-auto rounded-3xl ${grenze.className}
                     md:flex-row md:h-auto md:justify-center md:text-center`}
                 >
                     {openNav && windowWidth < 768 &&
@@ -120,8 +120,8 @@ export default function Nav() {
                     </>
                     }
                     {windowWidth >= 768 &&
-                    <div className="flex w-full m-auto justify-center dark:bg-zinc-800 rounded-3xl">
-                        <div className="flex w-full h-full m-auto justify-center items-center gap-20 p-4 border-gray-200 border-2 shadow-md rounded-3xl">
+                    <div className="flex w-full max-2xl m-auto justify-center dark:bg-zinc-800 rounded-3xl">
+                        <div className="flex w-full h-full m-auto justify-center items-center gap-12 p-2 border-gray-200 border-2 shadow-md rounded-3xl">
 
                             <Link href="/" className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</Link>
                             <Link href="/#projects-home" className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Projects</Link>
