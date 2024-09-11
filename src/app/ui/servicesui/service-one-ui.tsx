@@ -5,7 +5,7 @@ const mont = Montserrat({subsets: ["latin"], weight: ["200", "300"]})
 
 export default function ServiceOneUi() {
     return (
-        <div className="w-full md:max-w-5xl bg-zinc-800 p-8 my-8">
+        <div className="w-full md:max-w-5xl bg-zinc-800 p-8">
             {/* <div>
                 <img src="/WA_icon_v2.1.png" className="w-20"/>
                 <h1>Custom Software</h1>

@@ -59,15 +59,15 @@ export default function Nav() {
 
     return (
         <div className="flex h-full flex-col md:px-2 ml-auto">
-            <div className="w-full flex justify-center items-center font-mono p-2 gap-4">
-                <div className="flex h-full flex-row items-center md:px-2 ml-auto md:hidden shadow-lg dark:bg-zinc-800 border-gray-200 dark:border-gray-700 border-2 px-4 py-2 rounded-full gap-2">
+            <div className="fixed z-40 w-full flex justify-center items-center font-mono p-2 md:pt-2 md:pb-0 md:px-0">
+                <div className="z-index-100 flex h-full flex-row items-center md:px-2 ml-auto md:hidden shadow-lg bg-white dark:bg-zinc-800 border-gray-200 dark:border-gray-700 border-2 px-4 py-2 rounded-full gap-2 mr-2">
                     <p>Menu</p>
                     <ChevronDownIcon onClick={handleClick} ref={menuRef as React.RefObject<SVGSVGElement>} className={`w-4 text-black rounded md:hidden dark:text-white transition-all ${openNav ? "rotate-180" : "rotate-0"}`}/>
                 </div>
                 {windowWidth < 768 && <LightDarkMode />}
                 {!lightMode ?
                 <nav
-                    className={`fixed top-5 right-0 left-0 z-50 ${openNav ? "dark:border-gray-700" : "border-none"} ${openNav ? "dark:border-2" : "border-none"} 
+                    className={`fixed z-40 top-2 right-0 left-0 z-50 ${openNav ? "dark:border-gray-700" : "border-none"} ${openNav ? "dark:border-2" : "border-none"} 
                     dark:bg-zinc-800 flex grow flex-col justify-between text-left gap-4 ${openNav ? "h-96" : "h-0"} transition-all space-x-0 space-y-2 
                     ${openNav? "p-8" : "p-0"} w-11/12 max-w-4xl m-auto rounded-3xl ${grenze.className}
                     md:flex-row md:h-auto md:justify-center md:text-center`}

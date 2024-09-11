@@ -8,7 +8,9 @@ export default function CustomSoftware() {
                 <img src="/WA_icon_v2.1.png" className="w-48 h-48 text-center m-auto"/>
                 <h1 className="text-3xl">Custom Software</h1>
             </div>
-            <ServiceOneUi />
+            <div className="md:px-4">
+                <ServiceOneUi />
+            </div>
         </div>
     )
 }

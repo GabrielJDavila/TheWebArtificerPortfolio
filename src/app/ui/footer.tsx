@@ -1,9 +1,11 @@
 import Link from "next/link"
 import FooterLogo from "./footerlogo"
+import { Montserrat } from "next/font/google"
+const mont = Montserrat({subsets: ["latin"], weight: ["200", "300"]})
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col justify-items items-center text center bg-zinc-800 flex justify-between pt-8 pb-2 px-4 items-center mt-auto">
+        <footer className="flex flex-col justify-center items-center text-center bg-zinc-800 border-t-2 border-gray-700 pt-20 pb-2 px-4 items-center mt-12">
             <Link href="/">
                 <FooterLogo/>
             </Link>
@@ -16,8 +18,8 @@ export default function Footer() {
                 <li className="p-2"><Link href="/#services">Contact</Link></li>
             </ul>
             
-            <small><p className="text-white">&copy; The Web Articifer 2024</p></small>
-            <a href="https://gabedavila.com/" target="_blank" className="text-white"><small>Made with ❤️ by Gabriel Davila</small></a>
+            <small><p className={`${mont.className} text-white`}>&copy; The Web Articifer 2024. All rights reserved.</p></small>
+            {/* <a href="https://gabedavila.com/" target="_blank" className={`${mont.className} text-white`}><small>Made with ❤️ by Gabriel Davila</small></a> */}
         </footer>
     )
 }
