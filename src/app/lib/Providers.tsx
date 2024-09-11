@@ -1,7 +1,7 @@
 "use client"
 
 import { ColorThemeProvider } from "./ColorModeContext"
-import { NavProvider } from "./NavContext"
+import { NavProvider, NavProviderTwo } from "./NavContext"
 
 type ProviderProps = {
     children: React.ReactNode
@@ -10,9 +10,11 @@ type ProviderProps = {
 export function Providers({children}: ProviderProps) {
     return (
         <NavProvider>
-            <ColorThemeProvider>
-                {children}
-            </ColorThemeProvider>
+            <NavProviderTwo>
+                <ColorThemeProvider>
+                    {children}
+                </ColorThemeProvider>
+            </NavProviderTwo>
         </NavProvider>
     )
 }

@@ -5,12 +5,12 @@ const mont = Montserrat({subsets: ["latin"], weight: ["200", "300"]})
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col justify-center items-center text-center bg-zinc-800 border-t-2 border-gray-700 pt-20 pb-2 px-4 items-center mt-12">
+        <footer className="flex flex-col justify-center items-center text-center bg-zinc-800 border-t-2 border-gray-700 pt-12 pb-2 px-4 items-center mt-12">
             <Link href="/">
                 <FooterLogo/>
             </Link>
             
-            <ul className="flex flex-col md:flex-row flex-wrap justify-center items-center text-center p-4 text-white ease-in-out duration-200">
+            <ul className="flex flex-row flex-wrap justify-center items-center text-center p-4 text-white ease-in-out duration-200">
                 <li className="p-2"><Link href="/">Home</Link></li>
                 <li className="p-2"><Link href="/#about">About</Link></li>
                 <li className="p-2"><Link href="/#projects-home">Portfolio</Link></li>
