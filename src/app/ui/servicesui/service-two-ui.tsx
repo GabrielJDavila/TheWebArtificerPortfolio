@@ -17,13 +17,13 @@ export default function ServiceTwoUi() {
     }, [])
 
     return (
-        <div className="w-full md:max-w-5xl bg-zinc-800 py-20 md:pt-24 px-8">
+        <div className="w-full md:max-w-5xl bg-zinc-800 py-20 md:pt-24 px-8 text-white">
             <div className="w-full max-w-5xl text-center p-8 flex flex-col justify-center items-center gap-4">
                     {/* <img src="/WA_icon_v2.1.png" className="w-48 h-48 text-center m-auto"/> */}
                     <h1 className="text-3xl">Web Development</h1>
             </div>
             {windowWidth < 1024 ?
-            <div className="w-full flex flex-col justify-center items-center m-auto">
+            <div className="w-full flex flex-col justify-center items-center m-auto text-white">
                 <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-1/2`}>A Well Designed and Performative Website</h2>
                 <br></br>
                 <img src="/webdesignimg.png" className="w-full md:w-3/4 lg:w-1/2"/>

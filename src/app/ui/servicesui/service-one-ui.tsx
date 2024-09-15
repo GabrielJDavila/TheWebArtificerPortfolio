@@ -21,16 +21,16 @@ export default function ServiceOneUi() {
             <div className="w-full flex flex-col justify-center items-center md:px-4 m-auto">
                 <div className="w-full max-w-5xl text-center p-8 flex flex-col justify-center items-center gap-4">
                     {/* <img src="/WA_icon_v2.1.png" className="w-48 h-48 text-center m-auto"/> */}
-                    <h1 className="text-3xl">Custom Software</h1>
+                    <h1 className="text-3xl text-white">Custom Software</h1>
                 </div>
             </div>
             {windowWidth < 1024 ?
             <div className="w-full flex flex-col justify-center items-center m-auto">
-                <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-1/2`}>Why a Business Needs Software</h2>
+                <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-1/2 text-white`}>Why a Business Needs Software</h2>
                 <br></br>
                 <img src="/softwareimg.png" className="w-full md:w-3/4 lg:w-1/2"/>
                 <br></br>
-                <div className="md:w-3/4 lg:w-1/2">
+                <div className="md:w-3/4 lg:w-1/2 text-white">
                     <p className={`${mont.className}`}>As a business owner/manager, you know that there are so many things to do in a day, and only so much time.</p>
                     <br></br>
                     <p className={`${mont.className}`}>There are many minute tasks that suck up your time, time that could be better used to serve customers or build the business.</p>
@@ -40,12 +40,12 @@ export default function ServiceOneUi() {
                     the business!
                     </p>
                 </div>
-                <Link href="/contact" className="w-20 text-center mt-8 bg-sky-500 hover:bg-sky-700 p-2 rounded-full">Contact</Link>
+                <Link href="/contact" className="w-20 text-center text-white mt-8 bg-sky-500 hover:bg-sky-700 p-2 rounded-full">Contact</Link>
             </div>
             :
             <div className="w-full flex flex-row justify-center items-center m-auto gap-12">
-                <div className="md:w-3/4 lg:w-1/2 flex flex-col justify-center gap-4">
-                    <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-full`}>Why a Business Needs Software</h2>
+                <div className="md:w-3/4 lg:w-1/2 flex flex-col justify-center gap-4 text-white">
+                    <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-full text-white`}>Why a Business Needs Software</h2>
                     <p className={`${mont.className}`}>As a business owner/manager, you know that there are so many things to do in a day, and only so much time.</p>
                     
                     <p className={`${mont.className}`}>There are many minute tasks that suck up your time, time that could be better used to serve customers or build the business.</p>

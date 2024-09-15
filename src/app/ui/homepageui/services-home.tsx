@@ -14,7 +14,7 @@ export default function ServicesHomeUi() {
                     <p className={`${mont.className}`}>That is where my specialty lies: I'll handle the tech, you handle what you do best - running your business and helping your customers.</p>
                 </div>
                 <div className="flex flex-wrap gap-4 justify-center items-top mt-8">
-                    <div className="flex flex-col justify-items-start gap-4 text-left border-4 shadow-lg bg-slate-100 dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl max-w-md">
+                    <div className="flex flex-col justify-items-start gap-4 text-left border-2 dark:border-4 border-gray-100 shadow-lg bg-white dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl max-w-md">
                         <div className="flex flex-row items-center gap-4">
                             <img src="/WA_icon_v2.1.png" className="w-12"/>
                             <p className="text-sky-500 text-lg">Custom Software</p>
@@ -28,7 +28,7 @@ export default function ServicesHomeUi() {
                         </ul>
                         <Link href="/service-one"></Link>
                     </div>
-                    <div className="flex flex-col justify-items-start gap-4 text-left border-4 shadow-lg bg-slate-100 dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl max-w-md">
+                    <div className="flex flex-col justify-items-start gap-4 text-left border-2 dark:border-4 border-gray-100 shadow-lg bg-white dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl max-w-md">
                         <div className="flex flex-row items-center gap-4">
                             <img src="/WA_icon_v2.2.png" className="w-12"/>
                             <p className="text-sky-500 text-lg">Web Development</p>
@@ -41,7 +41,7 @@ export default function ServicesHomeUi() {
                             <li className={`${mont.className}`}>Uses best practices for user experience and accessibility.</li>
                         </ul>
                     </div>
-                    <div className="flex flex-col justify-items-start gap-4 text-left border-4 shadow-lg bg-slate-100 dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl max-w-md">
+                    <div className="flex flex-col justify-items-start gap-4 text-left border-2 dark:border-4 border-gray-100 shadow-lg bg-white dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl max-w-md">
                         <div className="flex flex-row items-center gap-4">
                             <img src="/WA_icon_v2.3.png" className="w-12"/>
                             <p className="text-sky-500 text-lg">Management, Hosting, and Security</p>
