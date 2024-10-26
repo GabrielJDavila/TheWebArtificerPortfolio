@@ -43,7 +43,7 @@ export default function AboutPageUi() {
                 </p>
                 <br></br>
                 <p className={`${mont.className} dark:text-white text-left`}>
-                    I now use my unique skillset to create stunning websites and helpful applications for small businesses. I love solving problems for people!
+                    I now use my unique skillset to create stunning websites and helpful applications for small businesses. I love solving problems for people,
                     and whether it's to improve a business function, troubleshoot a technical problem, designing a website, or creating an application, I do it all while providing an unparalled customer experience.
                 </p>
             </div>
@@ -109,7 +109,7 @@ export default function AboutPageUi() {
                 </p>
                 <br></br>
                 <p className={`${mont.className} dark:text-white text-left`}>
-                    I now use my unique skillset to create stunning websites and helpful applications for small businesses. I love solving problems for people!
+                    I now use my unique skillset to create stunning websites and helpful applications for small businesses. I love solving problems for people,
                     and whether it is to improve a business function, troubleshoot a technical problem, designing a website, or creating an application, I do it all while providing an unparalled customer experience.
                 </p>
             </div>
