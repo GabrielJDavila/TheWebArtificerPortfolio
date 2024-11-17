@@ -5,7 +5,7 @@ const mont = Montserrat({subsets: ["latin"], weight: ["200", "300"]})
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col justify-center items-center text-center bg-zinc-800 border-t-2 border-gray-700 pt-12 pb-2 px-4 items-center mt-12">
+        <footer className="flex flex-col justify-center items-center text-center bg-zinc-800 border-t-2 border-gray-700 pt-12 pb-2 px-4 items-center">
             <Link href="/">
                 <FooterLogo/>
             </Link>

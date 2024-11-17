@@ -17,7 +17,7 @@ export default function ServiceThreeUi() {
     }, [])
 
     return (
-        <div className="w-full md:max-w-5xl bg-zinc-800 py-20 md:pt-24 px-8 flex flex-col gap-8 text-white">
+        <div className="w-full md:max-w-4xl bg-zinc-800 py-20 md:pt-24 px-8 flex flex-col gap-8 text-white">
             <div className="w-full max-w-5xl text-center p-8 flex flex-col justify-center items-center gap-4">
                     <h1 className="text-3xl">Web Management, Hosting, & Security</h1>
             </div>

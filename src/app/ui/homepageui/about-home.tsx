@@ -15,7 +15,7 @@ export default function AboutHomeUi() {
     return (
         <section className="flex flex-col gap-12 my-20 bg-slate-100 dark:bg-zinc-800 p-8">
             <h2 className="my-4 text-2xl">About Me</h2>
-            <div className="flex flex-col lg:flex-row gap-8 lg:3/4 items-center">
+            <div className="flex flex-col lg:flex-row gap-8 lg:3/4 md:max-w-4xl items-center">
                 <img
                     src="blackshirtvv1.png"
                     alt="picture of Gabriel Davila, wearing a black collared shirt against a beige background."

@@ -17,7 +17,7 @@ export default function ServiceOneUi() {
     }, [])
 
     return (
-        <div className="w-full md:max-w-5xl bg-zinc-800 py-20 md:pt-24 px-8">
+        <div className="w-full md:max-w-4xl bg-zinc-800 py-20 md:pt-24 px-8">
             <div className="w-full flex flex-col justify-center items-center md:px-4 m-auto">
                 <div className="w-full max-w-5xl text-center p-8 flex flex-col justify-center items-center gap-4">
                     {/* <img src="/WA_icon_v2.1.png" className="w-48 h-48 text-center m-auto"/> */}
