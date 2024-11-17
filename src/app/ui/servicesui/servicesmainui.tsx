@@ -10,7 +10,7 @@ export default function ServicesMainUi() {
             {/* <Link href="services/service-one">Custom Software</Link>
             <Link href="services/service-two">Web Developement</Link>
             <Link href="services/service-three">Management, Hosting, and Security</Link> */}
-            <div className="flex flex-col gap-4 justify-center items-center w-full mt-8">
+            <div className="flex flex-col gap-4 justify-center items-center w-full mt-8 mb-20">
                     <div className="flex flex-col justify-items-start gap-4 text-left border-2 dark:border-4 border-gray-100 dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl w-full max-w-4xl">
                         <div className="flex flex-row items-center gap-4">
                             <img src="/WA_icon_v2.1.png" className="w-12"/>
