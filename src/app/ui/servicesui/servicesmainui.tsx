@@ -26,7 +26,7 @@ export default function ServicesMainUi() {
                             <img src="/WA_icon_v2.2.png" className="w-12"/>
                             <p className="text-sky-500 text-lg">Web Development</p>
                         </div>
-                        <p className={`${mont.className}`}>A website is the digital face of your business, and as such it's important to have an
+                        <p className={`${mont.className}`}>A website is the digital face of your business, and as such it&apos;s important to have an
                             optimized and performative website. I design and develop websites with expertly crafted user experience, SEO, and performance.
                         </p>
                         <Link href="services/service-two" className="bg-sky-600 w-32 text-center text-white rounded-full py-2">Learn more</Link>

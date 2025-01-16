@@ -28,11 +28,11 @@ export default function ServiceThreeUi() {
                 <img src="/securityimg.png" className="w-full md:w-3/4 lg:w-1/2"/>
                 <br></br>
                 <div className="md:w-3/4 lg:w-1/2">
-                    <p className={`${mont.className}`}>After you have you website, it's all peaches and rainbows, right? Well, not exactly.</p>
+                    <p className={`${mont.className}`}>After you have you website, it&apos;s all peaches and rainbows, right? Well, not exactly.</p>
                     <br></br>
                     <p className={`${mont.className}`}>Over time as technology evolves, so too does your website need to evolve - or else it will be vunerable to attacks.
-                        Unfortunately that is just the nature of technology. Fortunately for you, I can handle website management and security for you. You won't have to
-                        worry about contantly updating your site or making sure it's secure.
+                        Unfortunately that is just the nature of technology. Fortunately for you, I can handle website management and security for you. You won&apos;t have to
+                        worry about contantly updating your site or making sure it&apos;s secure.
                     </p>
                     <br></br>
                     <p className={`${mont.className}`}>I handle the hosting of your site on my own secure providers, and handle updating website security. If your website
@@ -45,11 +45,11 @@ export default function ServiceThreeUi() {
             <div className="w-full flex flex-row justify-center items-center m-auto gap-12">
                 <div className="md:w-3/4 lg:w-1/2 flex flex-col justify-center gap-4">
                     <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-full`}>Website Management Made Easy</h2>
-                    <p className={`${mont.className}`}>After you have you website, it's all peaches and rainbows, right? Well, not exactly.</p>
+                    <p className={`${mont.className}`}>After you have you website, it&apos;s all peaches and rainbows, right? Well, not exactly.</p>
                     
                     <p className={`${mont.className}`}>Over time as technology evolves, so too does your website need to evolve - or else it will be vunerable to attacks.
-                        Unfortunately that is just the nature of technology. Fortunately for you, I can handle website management and security for you. You won't have to
-                        worry about contantly updating your site or making sure it's secure.
+                        Unfortunately that is just the nature of technology. Fortunately for you, I can handle website management and security for you. You won&apos;t have to
+                        worry about contantly updating your site or making sure it&apos;s secure.
                     </p>
                     
                     <p className={`${mont.className}`}>I handle the hosting of your site on my own secure providers, and handle updating website security. If your website

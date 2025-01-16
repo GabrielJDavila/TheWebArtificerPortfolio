@@ -1,7 +1,7 @@
 "use client"
 import { MoonIcon, SunIcon, SparklesIcon } from "@heroicons/react/24/outline"
 import { useRef, useState } from "react"
-import flipColorMode from "../lib/changecolormode"
+// import FlipColorMode from "../lib/changecolormode"
 import { useColorTheme } from "../lib/ColorModeContext"
 
 export default function LightDarkMode() {
