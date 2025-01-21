@@ -26,7 +26,7 @@ export default function ServiceTwoUi() {
             <div className="w-full flex flex-col justify-center items-center m-auto text-white">
                 <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-1/2`}>A Well Designed and Performative Website</h2>
                 <br></br>
-                <img src="/webdesignimg.png" className="w-full md:w-3/4 lg:w-1/2"/>
+                <img src="/webdesignimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of website on various devices; laptop, tablet, phone."/>
                 <br></br>
                 <div className="md:w-3/4 lg:w-1/2">
                     <p className={`${mont.className}`}>A website is the digital face of your business. It is what your potential customers see and interact with,
@@ -56,7 +56,7 @@ export default function ServiceTwoUi() {
                     </p>
                     <Link href="/contact" className="w-20 text-center bg-sky-500 hover:bg-sky-700 p-2 rounded-full">Contact</Link>
                 </div>
-                <img src="/webdesignimg.png" className="w-full md:w-3/4 lg:w-1/2"/>
+                <img src="/webdesignimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of website on various devices; laptop, tablet, phone."/>
             </div>
             }
         </div>

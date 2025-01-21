@@ -2,7 +2,6 @@
 import { Bars2Icon, ChevronDownIcon, XMarkIcon } from "@heroicons/react/24/outline"
 import { useState, useEffect, useRef } from "react"
 import LightDarkMode from "./lightdarkmode"
-import flipColorMode from "../lib/changecolormode"
 import { Grenze_Gotisch } from "next/font/google"
 import { useNav, useServicesNav } from "../lib/NavContext"
 import { useColorTheme } from "../lib/ColorModeContext"
@@ -80,7 +79,7 @@ export default function Nav() {
             <div className="fixed z-40 w-full flex justify-center items-center font-mono p-2 md:pt-2 md:pb-0 md:px-0">
                 <div ref={menuRef} className="z-index-100 flex h-full flex-row items-center md:px-2 ml-auto md:hidden shadow-lg bg-white dark:bg-zinc-800 border-gray-200 dark:border-gray-700 border-2 px-4 py-2 rounded-full gap-2 mr-2">
                     <p>Menu</p>
-                    <ChevronDownIcon onClick={handleClick} className={`w-4 text-black rounded md:hidden dark:text-white transition-all ${openNav ? "rotate-180" : "rotate-0"}`}/>
+                    <ChevronDownIcon onClick={handleClick} className={`w-4 text-black rounded md:hidden dark:text-white transition-all cursor-pointer ${openNav ? "rotate-180" : "rotate-0"}`}/>
                 </div>
                 {windowWidth < 768 && <LightDarkMode />}
                 {!lightMode ?
@@ -94,7 +93,7 @@ export default function Nav() {
                     <>
                     <div className="flex flex-row justify-between items-center md:hidden">
                         <p className="text-gray-200">Menu</p>
-                        <XMarkIcon onClick={handleClick} className="w-6 text-gray-200"/>
+                        <XMarkIcon onClick={handleClick} className="w-6 text-gray-200 cursor-pointer"/>
                     </div>
                     <Link onClick={handleLinkClick} href="/" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Home</Link>
                     <Link onClick={handleLinkClick} href="/#projects-home" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Projects</Link>
@@ -141,7 +140,7 @@ export default function Nav() {
                     <>
                     <div className="flex flex-row justify-between items-center">
                         <p className="text-zinc-600">Menu</p>
-                        <XMarkIcon className="w-6 text-zinc-600"/>
+                        <XMarkIcon className="w-6 text-zinc-600 cursor-pointer"/>
                     </div>
                     <Link onClick={handleLinkClick} href="/" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Home</Link>
                     <Link onClick={handleLinkClick} href="/#projects-home" className="text-black cursor-pointer border-b-2 border-gray-300 pb-2 text-lg hover:underline hover:underline-offset-8">Projects</Link>

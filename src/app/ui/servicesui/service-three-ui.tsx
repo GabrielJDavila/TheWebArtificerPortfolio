@@ -25,7 +25,7 @@ export default function ServiceThreeUi() {
             <div className="w-full flex flex-col justify-center items-center m-auto">
                 <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-1/2`}>Website Management Made Easy</h2>
                 <br></br>
-                <img src="/securityimg.png" className="w-full md:w-3/4 lg:w-1/2"/>
+                <img src="/securityimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of motherboard with a lock shape to denote security."/>
                 <br></br>
                 <div className="md:w-3/4 lg:w-1/2">
                     <p className={`${mont.className}`}>After you have you website, it&apos;s all peaches and rainbows, right? Well, not exactly.</p>
@@ -57,7 +57,7 @@ export default function ServiceThreeUi() {
                     </p>
                     <Link href="/contact" className="w-20 text-center bg-sky-500 hover:bg-sky-700 p-2 rounded-full">Contact</Link>
                 </div>
-                <img src="/securityimg.png" className="w-full md:w-3/4 lg:w-1/2"/>
+                <img src="/securityimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of motherboard with a lock shape to denote security."/>
             </div>
             }
         </div>

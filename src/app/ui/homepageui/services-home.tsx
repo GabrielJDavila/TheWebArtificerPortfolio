@@ -16,7 +16,7 @@ export default function ServicesHomeUi() {
                 <div className="flex flex-wrap gap-4 justify-center items-top mt-8">
                     <div className="flex flex-col justify-items-start gap-4 text-left border-2 dark:border-4 border-gray-100 shadow-lg bg-white dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl max-w-md">
                         <div className="flex flex-row items-center gap-4">
-                            <img src="/WA_icon_v2.1.png" className="w-12"/>
+                            <img src="/WA_icon_v2.1.png" className="w-12" alt="custom software."/>
                             <p className="text-sky-500 text-lg">Custom Software</p>
                         </div>
                         <p className={`${mont.className}`}>Custom software that would help automate and streamline your business.</p>
@@ -30,7 +30,7 @@ export default function ServicesHomeUi() {
                     </div>
                     <div className="flex flex-col justify-items-start gap-4 text-left border-2 dark:border-4 border-gray-100 shadow-lg bg-white dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl max-w-md">
                         <div className="flex flex-row items-center gap-4">
-                            <img src="/WA_icon_v2.2.png" className="w-12"/>
+                            <img src="/WA_icon_v2.2.png" className="w-12" alt="web development."/>
                             <p className="text-sky-500 text-lg">Web Development</p>
                         </div>
                         <p className={`${mont.className}`}>Optimized and performative websites.</p>
@@ -43,7 +43,7 @@ export default function ServicesHomeUi() {
                     </div>
                     <div className="flex flex-col justify-items-start gap-4 text-left border-2 dark:border-4 border-gray-100 shadow-lg bg-white dark:border-zinc-700 dark:bg-zinc-800 px-4 py-8 rounded-3xl max-w-md">
                         <div className="flex flex-row items-center gap-4">
-                            <img src="/WA_icon_v2.3.png" className="w-12"/>
+                            <img src="/WA_icon_v2.3.png" className="w-12" alt="website management, hosting, and security."/>
                             <p className="text-sky-500 text-lg">Management, Hosting, and Security</p>
                         </div>
                         <p className={`${mont.className}`}>Save the headache of managing your website and software. Maintenance, security, and hosting is done for you.</p>

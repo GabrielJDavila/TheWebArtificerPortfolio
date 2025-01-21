@@ -20,9 +20,9 @@ export default function LightDarkMode() {
             } */}
             <div className="flex h-full flex-col md:px-2 shadow-lg bg-white dark:bg-zinc-800 border-gray-200 dark:border-gray-700 border-2 px-3 py-2 rounded-full">
                 {colorTheme === "dark" ?
-                <MoonIcon onClick={handleToggleTheme} className="dark:text-white w-6"/>
+                <MoonIcon onClick={handleToggleTheme} className="dark:text-white w-6 cursor-pointer"/>
                 :
-                <SunIcon onClick={handleToggleTheme} className="text-blue-400 w-6"/>
+                <SunIcon onClick={handleToggleTheme} className="text-blue-400 w-6 cursor-pointer"/>
                 }
                 
             </div>

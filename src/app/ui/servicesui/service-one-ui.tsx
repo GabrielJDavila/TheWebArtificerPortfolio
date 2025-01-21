@@ -28,7 +28,7 @@ export default function ServiceOneUi() {
             <div className="w-full flex flex-col justify-center items-center m-auto">
                 <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-1/2 text-white`}>Why a Business Needs Software</h2>
                 <br></br>
-                <img src="/softwareimg.png" className="w-full md:w-3/4 lg:w-1/2"/>
+                <img src="/softwareimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of coding interface background."/>
                 <br></br>
                 <div className="md:w-3/4 lg:w-1/2 text-white">
                     <p className={`${mont.className}`}>As a business owner/manager, you know that there are so many things to do in a day, and only so much time.</p>
@@ -56,7 +56,7 @@ export default function ServiceOneUi() {
                     </p>
                     <Link href="/contact" className="w-20 text-center bg-sky-500 hover:bg-sky-700 p-2 rounded-full">Contact</Link>
                 </div>
-                <img src="/softwareimg.png" className="w-full md:w-3/4 lg:w-1/2"/>
+                <img src="/softwareimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of coding interface background."/>
             </div>
             }
         </div>
