@@ -5,7 +5,6 @@ import LightDarkMode from "./lightdarkmode"
 import { Grenze_Gotisch } from "next/font/google"
 import { useNav, useServicesNav } from "../lib/NavContext"
 import { useColorTheme } from "../lib/ColorModeContext"
-import { listeners } from "process"
 const grenze = Grenze_Gotisch({ subsets: ["latin"] })
 import Link from "next/link"
 
@@ -16,7 +15,6 @@ export default function Nav() {
     const servicesMenuRef = useRef<SVGSVGElement | null>(null)
     const {colorTheme, setColorTheme} = useColorTheme()
     const [lightMode, setLightMode] = useState(false)
-    // const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
     useEffect(() => {
         if(colorTheme === "light") {
@@ -26,29 +24,15 @@ export default function Nav() {
         }
     }, [colorTheme])
 
-    // useEffect(() => {
-    //     if(typeof window !== "undefined") {
-    //         const handleResize = () => setWindowWidth(window.innerWidth)
-    //         window.addEventListener("resize", handleResize)
-    //         return () => window.removeEventListener("resize", handleResize)
-    //     }
-    // }, [])
-
     useEffect(() => {
         document.addEventListener("click", handleClickOutside)
         return () => {
             document.removeEventListener("click", handleClickOutside)
         }
     }, [])
-    // useEffect(() => {
-    //     if(windowWidth >= 768) {
-    //         setOpenNav(false)
-    //     }
-    // }, [windowWidth])
     
     function handleClick() {
         setOpenNav((prev: boolean) => !prev)
-        console.log("clicked nav bars")
     }
     function handleServicesClick() {
         setOpenServicesNav((prev: boolean) => !prev)
@@ -63,9 +47,7 @@ export default function Nav() {
             servicesMenuRef.current &&
             !servicesMenuRef.current.contains(target)
         ) {
-            console.log(e.target)
             setOpenNav(false)
-            console.log("clicked outside")
         }
     }
 
