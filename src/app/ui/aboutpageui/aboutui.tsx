@@ -7,22 +7,10 @@ const inter = Inter({ subsets: ["latin"], weight: ["200", "300"] })
 const mont = Montserrat({subsets: ["latin"], weight: ["200",  "300"]})
 
 export default function AboutPageUi() {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-
-    useEffect(() => {
-        if(typeof window !== "undefined") {
-            const handleResize = () => setWindowWidth(window.innerWidth)
-            window.addEventListener("resize", handleResize)
-
-            return () => window.removeEventListener("resize", handleResize)
-        }
-    }, [])
-
-    console.log(windowWidth)
     
     return (
-        windowWidth < 1024 ?
-        <div className="flex flex-col justify-center text-center items-center gap-8 md:w-3/4 lg:max-w-5xl m-auto items-center">
+        <div>
+        <div className="flex flex-col justify-center text-center items-center gap-8 md:w-3/4 lg:max-w-5xl m-auto items-center lg:hidden">
             <div className="flex flex-col flex-wrap text-center justify-center items-center w-3/4 max-w-96 m-auto mx-8 my-4 lg:my-8">
                 <img
                     src="blackshirtvv1.png"
@@ -69,8 +57,8 @@ export default function AboutPageUi() {
                     </div>
             </div>
         </div>
-        :
-        <div className="flex flex-row justify-center text-center items-center gap-8 md:w-3/4 lg:max-w-5xl m-auto items-center">
+        
+        <div className="hidden lg:flex flex-row justify-center text-center items-center gap-8 md:w-3/4 lg:max-w-5xl m-auto items-center">
             <div className="flex flex-col flex-wrap text-center justify-center items-center gap-12 w-3/4 md:w-full sm:max-w-96 lg:max-w-md m-auto mx-8 my-4 lg:my-8">
                 <img
                     src="blackshirtvv1.png"
@@ -113,6 +101,7 @@ export default function AboutPageUi() {
                     and whether it is to improve a business function, troubleshoot a technical problem, designing a website, or creating an application, I do it all while providing an unparalled customer experience.
                 </p>
             </div>
+        </div>
         </div>
     )
 }
