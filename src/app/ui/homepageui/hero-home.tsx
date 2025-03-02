@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function HeroHomeUi() {
    const {colorTheme, setColorTheme} = useColorTheme()
-   console.log(colorTheme)
+   
     return (
         <section className="flex flex-col gap-10 mt-4 mb-20 md:mt-20">
             <LogoColorMode />

@@ -10,7 +10,6 @@ const mont = Montserrat({subsets: ["latin"], weight: ["200",  "300"]})
 
 export default function AboutHomeUi() {
    const {colorTheme, setColorTheme} = useColorTheme()
-   console.log(colorTheme)
 
     return (
         <section className="flex flex-col gap-12 my-20 bg-slate-100 dark:bg-zinc-800 p-8">

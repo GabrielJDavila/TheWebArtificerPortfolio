@@ -16,7 +16,7 @@ export default function Nav() {
     const servicesMenuRef = useRef<SVGSVGElement | null>(null)
     const {colorTheme, setColorTheme} = useColorTheme()
     const [lightMode, setLightMode] = useState(false)
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    // const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
     useEffect(() => {
         if(colorTheme === "light") {
@@ -26,13 +26,13 @@ export default function Nav() {
         }
     }, [colorTheme])
 
-    useEffect(() => {
-        if(typeof window !== "undefined") {
-            const handleResize = () => setWindowWidth(window.innerWidth)
-            window.addEventListener("resize", handleResize)
-            return () => window.removeEventListener("resize", handleResize)
-        }
-    }, [])
+    // useEffect(() => {
+    //     if(typeof window !== "undefined") {
+    //         const handleResize = () => setWindowWidth(window.innerWidth)
+    //         window.addEventListener("resize", handleResize)
+    //         return () => window.removeEventListener("resize", handleResize)
+    //     }
+    // }, [])
 
     useEffect(() => {
         document.addEventListener("click", handleClickOutside)
@@ -40,11 +40,11 @@ export default function Nav() {
             document.removeEventListener("click", handleClickOutside)
         }
     }, [])
-    useEffect(() => {
-        if(windowWidth >= 768) {
-            setOpenNav(false)
-        }
-    }, [windowWidth])
+    // useEffect(() => {
+    //     if(windowWidth >= 768) {
+    //         setOpenNav(false)
+    //     }
+    // }, [windowWidth])
     
     function handleClick() {
         setOpenNav((prev: boolean) => !prev)
@@ -81,7 +81,7 @@ export default function Nav() {
                     <p>Menu</p>
                     <ChevronDownIcon onClick={handleClick} className={`w-4 text-black rounded md:hidden dark:text-white transition-all cursor-pointer ${openNav ? "rotate-180" : "rotate-0"}`}/>
                 </div>
-                {windowWidth < 768 && <LightDarkMode />}
+                
                 {!lightMode ?
                 <nav
                     className={`fixed z-40 top-2 right-0 left-0 z-50 ${openNav ? "dark:border-gray-700" : "border-none"} ${openNav ? "dark:border-2" : "border-none"} 
@@ -89,34 +89,34 @@ export default function Nav() {
                     ${openNav? "p-8" : "p-0"} w-11/12 max-w-2xl m-auto rounded-3xl ${grenze.className}
                     md:flex-row md:h-auto md:justify-center md:text-center`}
                 >
-                    {openNav && windowWidth < 768 &&
+                    {openNav &&
                     <>
-                    <div className="flex flex-row justify-between items-center md:hidden">
-                        <p className="text-gray-200">Menu</p>
-                        <XMarkIcon onClick={handleClick} className="w-6 text-gray-200 cursor-pointer"/>
-                    </div>
-                    <Link onClick={handleLinkClick} href="/" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Home</Link>
-                    <Link onClick={handleLinkClick} href="/#projects-home" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Projects</Link>
-                    <Link onClick={handleLinkClick} href="/about" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">About</Link>
-                    <div className="flex flex-col gap-4 items-center justify-left text-left mr-auto border-b-2 border-gray-700 pb-2">
-                        <div className="flex flex-row justify-left items-center text-left gap-4 mr-auto">
-                            <Link href="/services" className="text-white cursor-pointer text-lg">Services</Link>
-                            <ChevronDownIcon ref={servicesMenuRef} onClick={handleServicesClick} className={`w-4 text-black rounded md:hidden dark:text-white transition-all ${openServicesNav ? "rotate-180" : "rotate-0"}`}/>
+                        <div className="flex flex-row justify-between items-center md:hidden">
+                            <p className="text-gray-200">Menu</p>
+                            <XMarkIcon onClick={handleClick} className="w-6 text-gray-200 cursor-pointer"/>
                         </div>
-                        {openServicesNav &&
-                        <div className="flex flex-col justify-left items-center text-left gap-2 mr-auto">
-                            <Link onClick={handleLinkClick} href="/services/service-one" className="text-left mr-auto cursor-pointer hover:underline hover:underline-offset-8">Custom Software</Link>
-                            <Link onClick={handleLinkClick} href="/services/service-two" className="text-left mr-auto cursor-pointer hover:underline hover:underline-offset-8">Web Development</Link>
-                            <Link onClick={handleLinkClick} href="/services/service-three" className="text-left mr-auto cursor-pointer hover:underline hover:underline-offset-8">Website Management & Hosting</Link>
+                        <Link onClick={handleLinkClick} href="/" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Home</Link>
+                        <Link onClick={handleLinkClick} href="/#projects-home" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">Projects</Link>
+                        <Link onClick={handleLinkClick} href="/about" className="text-white cursor-pointer hover:underline hover:underline-offset-8 border-b-2 border-gray-700 pb-2 text-lg">About</Link>
+                        <div className="flex flex-col gap-4 items-center justify-left text-left mr-auto border-b-2 border-gray-700 pb-2">
+                            <div className="flex flex-row justify-left items-center text-left gap-4 mr-auto">
+                                <Link href="/services" className="text-white cursor-pointer text-lg">Services</Link>
+                                <ChevronDownIcon ref={servicesMenuRef} onClick={handleServicesClick} className={`w-4 text-black rounded md:hidden dark:text-white transition-all ${openServicesNav ? "rotate-180" : "rotate-0"}`}/>
+                            </div>
+                            {openServicesNav &&
+                            <div className="flex flex-col justify-left items-center text-left gap-2 mr-auto">
+                                <Link onClick={handleLinkClick} href="/services/service-one" className="text-left mr-auto cursor-pointer hover:underline hover:underline-offset-8">Custom Software</Link>
+                                <Link onClick={handleLinkClick} href="/services/service-two" className="text-left mr-auto cursor-pointer hover:underline hover:underline-offset-8">Web Development</Link>
+                                <Link onClick={handleLinkClick} href="/services/service-three" className="text-left mr-auto cursor-pointer hover:underline hover:underline-offset-8">Website Management & Hosting</Link>
+                            </div>
+                            }
                         </div>
-                        }
-                    </div>
-                    
-                    <Link href="/contact" className="text-white cursor-pointer hover:underline hover:underline-offset-8 text-lg">Contact</Link>
+                        
+                        <Link href="/contact" className="text-white cursor-pointer hover:underline hover:underline-offset-8 text-lg">Contact</Link>
                     </>
                     }
-                    {windowWidth >= 768 &&
-                    <div className="flex w-full max-w-2xl m-auto justify-center dark:bg-zinc-800 rounded-3xl">
+                    
+                    <div className="hidden md:block flex w-full max-w-2xl m-auto justify-center dark:bg-zinc-800 rounded-3xl">
                         <div className="flex w-full h-full m-auto justify-center items-center gap-12 p-2 dark:border-gray-700 dark:border-2 rounded-3xl">
 
                             <Link href="/" className="hidden text-white cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</Link>
@@ -127,7 +127,7 @@ export default function Nav() {
                             <LightDarkMode />
                         </div>
                     </div>
-                    }
+                    
                 </nav>
                 :
                 <nav
@@ -136,9 +136,9 @@ export default function Nav() {
                     ${openNav? "p-8" : "p-0"} w-11/12 max-w-2xl m-auto rounded-3xl ${grenze.className}
                     md:flex-row md:h-auto md:justify-center md:text-center`}
                 >
-                    {openNav && windowWidth < 768 &&
+                    {openNav &&
                     <>
-                    <div className="flex flex-row justify-between items-center">
+                    <div className="flex flex-row justify-between items-center md:hidden">
                         <p className="text-zinc-600">Menu</p>
                         <XMarkIcon className="w-6 text-zinc-600 cursor-pointer"/>
                     </div>
@@ -161,8 +161,8 @@ export default function Nav() {
                     <Link onClick={handleLinkClick} href="/contact" className="text-black cursor-pointer text-lg">Contact</Link>
                     </>
                     }
-                    {windowWidth >= 768 &&
-                    <div className="flex w-full max-2xl m-auto justify-center dark:bg-zinc-800 rounded-3xl">
+                    
+                    <div className="hidden md:block flex w-full max-2xl m-auto justify-center dark:bg-zinc-800 rounded-3xl">
                         <div className="flex w-full h-full m-auto justify-center items-center gap-12 p-2 border-gray-200 border-2 shadow-md rounded-3xl">
 
                             <Link href="/" className="hidden text-black cursor-pointer text-lg md:block m-0 hover:underline hover:underline-offset-8">Home</Link>
@@ -173,11 +173,11 @@ export default function Nav() {
                             <LightDarkMode />
                         </div>
                     </div>
-                    }
+                    
                 </nav>
                 }
+                <LightDarkMode />
             </div>
-            
         </div>
     )
 }
