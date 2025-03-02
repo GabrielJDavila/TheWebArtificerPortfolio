@@ -33,18 +33,18 @@ export default function AboutPageUi() {
             </div>
 
             <div className="text-left lg:w-full">
-                <h1 className="my-4 text-2xl">Hi, I'm Gabriel.</h1>
-                <p className={`${mont.className} dark:text-white text-left`}>I'm not your traditional developer. I started my career in the fitness industry as a personal trainer. As a trainer, I got to meet so many different types of people, and learned so much. I developed excellent skills
+                <h1 className="my-4 text-2xl">Hi, I&apos;m Gabriel.</h1>
+                <p className={`${mont.className} dark:text-white text-left`}>I&apos;m not your traditional developer. I started my career in the fitness industry as a personal trainer. As a trainer, I got to meet so many different types of people, and learned so much. I developed excellent skills
                     such as customer service, sales, coaching, leadership qualities, and more.
                 </p>
                 <br></br>
                 <p className={`${mont.className} dark:text-white text-left`}>While I love training, I had a certain creative and analytical itch that needed to be scratched. I did some research, and found programming.
-                    What started as some tinkering turned into a passion; I love the creative yet problem-solving aspect of programming, as I get to see my projects come to life like a carpenter sees the house they built.
+                    What started as some tinkering turned into a passion! I love the creative yet problem-solving aspect of programming, as I get to see my projects come to life from the ground up.
                 </p>
                 <br></br>
                 <p className={`${mont.className} dark:text-white text-left`}>
                     I now use my unique skillset to create stunning websites and helpful applications for small businesses. I love solving problems for people,
-                    and whether it's to improve a business function, troubleshoot a technical problem, designing a website, or creating an application, I do it all while providing an unparalled customer experience.
+                    and whether it&apos;s to improve a business function, troubleshoot a technical problem, designing a website, or creating an application, I do it all while providing an unparalled customer experience.
                 </p>
             </div>
 
@@ -99,13 +99,13 @@ export default function AboutPageUi() {
             </div>
 
             <div className="text-left lg:w-full lg:order-first">
-                <h1 className="my-4 text-2xl">Hi, I'm Gabriel.</h1>
-                <p className={`${mont.className} dark:text-white text-left`}>I'm not your traditional developer. I started my career in the fitness industry as a personal trainer. As a trainer, I got to meet so many different types of people, and learned so much. I developed excellent skills
+                <h1 className="my-4 text-2xl">Hi, I&apos;m Gabriel.</h1>
+                <p className={`${mont.className} dark:text-white text-left`}>I&apos;m not your traditional developer. I started my career in the fitness industry as a personal trainer. As a trainer, I got to meet so many different types of people, and learned so much. I developed excellent skills
                     such as customer service, sales, coaching, leadership qualities, and more.
                 </p>
                 <br></br>
                 <p className={`${mont.className} dark:text-white text-left`}>While I love training, I had a certain creative and analytical itch that needed to be scratched. I did some research, and found programming.
-                    What started as some tinkering turned into a passion; I love the creative yet problem-solving aspect of programming, as I get to see my projects come to life like a carpenter sees the house they built.
+                    What started as some tinkering turned into a passion! I love the creative yet problem-solving aspect of programming, as I get to see my projects come to life from the ground up.
                 </p>
                 <br></br>
                 <p className={`${mont.className} dark:text-white text-left`}>

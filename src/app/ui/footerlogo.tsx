@@ -1,7 +1,6 @@
 "use client"
 import { MoonIcon, SunIcon, SparklesIcon } from "@heroicons/react/24/outline"
 import { useRef, useState, useEffect } from "react"
-import flipColorMode from "../lib/changecolormode"
 import { useColorTheme } from "../lib/ColorModeContext"
 
 export default function FooterLogo() {

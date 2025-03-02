@@ -22,7 +22,7 @@ export default function AboutHomeUi() {
                     className="flex flex-col w-1/2 lg:w-96 text-center justify-center items-center m-auto mx-8 my-4 lg:my-8 rounded-3xl rotate-3 shadow"
                 />
                 <div className="flex flex-col justify-center lg:w-1/2 max-w-lg m-auto">
-                    <p className={`${mont.className} dark:text-white text-left`}>I'm Gabriel, and I'm not your traditional developer. I have 7+ years in the fitness industry, developing excellent customer service and soft skills.
+                    <p className={`${mont.className} dark:text-white text-left`}>I&apos;m Gabriel, and I&apos;m not your traditional developer. I have 7+ years in the fitness industry, developing excellent customer service and soft skills.
                         In 2019 I learned how to code, and fell in love with the creative and problem-solving nature of web & software development.
                         I now use my unique skillset to create stunning websites and helpful applications for small businesses, all while providing an unparalleled customer experience.</p>
                     <Link href="/about" className="bg-sky-600 text-white w-24 mx-auto my-8 p-2 rounded-full hover:bg-sky-700">Read more</Link>
