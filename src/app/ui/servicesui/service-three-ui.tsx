@@ -2,22 +2,13 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Montserrat } from "next/font/google"
+import Image from "next/image"
 const mont = Montserrat({subsets: ["latin"], weight: ["200", "300"]})
 
 export default function ServiceThreeUi() {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-
-    useEffect(() => {
-        if(typeof window !== "undefined") {
-            const handleResize = () => setWindowWidth(window.innerWidth)
-            window.addEventListener("resize", handleResize)
-
-            return () => window.removeEventListener("resize", handleResize)
-        }
-    }, [])
 
     return (
-        <div className="w-full md:max-w-4xl bg-zinc-800 py-20 md:pt-24 px-8 flex flex-col gap-8 text-white">
+        <div className="w-full md:max-w-4xl bg-zinc-800 py-20 md:pt-24 px-8 flex flex-col gap-8 text-white mb-16">
             <div className="w-full max-w-5xl text-center p-8 flex flex-col justify-center items-center gap-4">
                     <h1 className="text-3xl">Web Management, Hosting, & Security</h1>
             </div>
@@ -25,7 +16,7 @@ export default function ServiceThreeUi() {
             <div className="w-full flex flex-col justify-center items-center m-auto lg:hidden">
                 <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-1/2`}>Website Management Made Easy</h2>
                 <br></br>
-                <img src="/securityimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of motherboard with a lock shape to denote security."/>
+                <Image src="/securityimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of motherboard with a lock shape to denote security." width={500} height={500}/>
                 <br></br>
                 <div className="md:w-3/4 lg:w-1/2">
                     <p className={`${mont.className}`}>After you have you website, it&apos;s all peaches and rainbows, right? Well, not exactly.</p>
@@ -57,7 +48,7 @@ export default function ServiceThreeUi() {
                     </p>
                     <Link href="/contact" className="w-20 text-center bg-sky-500 hover:bg-sky-700 p-2 rounded-full">Contact</Link>
                 </div>
-                <img src="/securityimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of motherboard with a lock shape to denote security."/>
+                <Image src="/securityimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of motherboard with a lock shape to denote security." width={500} height={500}/>
             </div>
             
         </div>

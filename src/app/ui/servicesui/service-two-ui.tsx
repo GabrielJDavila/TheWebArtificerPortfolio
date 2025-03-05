@@ -2,22 +2,13 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Montserrat } from "next/font/google"
+import Image from "next/image"
 const mont = Montserrat({subsets: ["latin"], weight: ["200", "300"]})
 
 export default function ServiceTwoUi() {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-
-    useEffect(() => {
-        if(typeof window !== "undefined") {
-            const handleResize = () => setWindowWidth(window.innerWidth)
-            window.addEventListener("resize", handleResize)
-
-            return () => window.removeEventListener("resize", handleResize)
-        }
-    }, [])
 
     return (
-        <div className="w-full md:max-w-4xl bg-zinc-800 py-20 md:pt-24 px-8 text-white">
+        <div className="w-full md:max-w-4xl bg-zinc-800 py-20 md:pt-24 px-8 text-white mb-16">
             <div className="w-full max-w-5xl text-center p-8 flex flex-col justify-center items-center gap-4">
                     {/* <img src="/WA_icon_v2.1.png" className="w-48 h-48 text-center m-auto"/> */}
                     <h1 className="text-3xl">Web Development</h1>
@@ -26,7 +17,7 @@ export default function ServiceTwoUi() {
             <div className="w-full flex flex-col justify-center items-center m-auto text-white lg:hidden">
                 <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-1/2`}>A Well Designed and Performative Website</h2>
                 <br></br>
-                <img src="/webdesignimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of website on various devices; laptop, tablet, phone."/>
+                <Image src="/webdesignimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of website on various devices; laptop, tablet, phone." width={500} height={500}/>
                 <br></br>
                 <div className="md:w-3/4 lg:w-1/2">
                     <p className={`${mont.className}`}>A website is the digital face of your business. It is what your potential customers see and interact with,
@@ -56,7 +47,7 @@ export default function ServiceTwoUi() {
                     </p>
                     <Link href="/contact" className="w-20 text-center bg-sky-500 hover:bg-sky-700 p-2 rounded-full">Contact</Link>
                 </div>
-                <img src="/webdesignimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of website on various devices; laptop, tablet, phone."/>
+                <Image src="/webdesignimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of website on various devices; laptop, tablet, phone." width={500} height={500}/>
             </div>
             
         </div>

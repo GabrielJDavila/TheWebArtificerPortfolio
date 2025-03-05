@@ -4,6 +4,7 @@ import { Inter, Montserrat } from "next/font/google"
 import LogoColorMode from "../logocolormode"
 import { useColorTheme } from "../../lib/ColorModeContext"
 import Link from "next/link"
+import Image from "next/image"
 
 const inter = Inter({ subsets: ["latin"], weight: ["200", "300"] })
 const mont = Montserrat({subsets: ["latin"], weight: ["200",  "300"]})
@@ -15,9 +16,11 @@ export default function AboutHomeUi() {
         <section className="flex flex-col gap-12 my-20 bg-slate-100 dark:bg-zinc-800 p-8">
             <h2 className="my-4 text-2xl">About Me</h2>
             <div className="flex flex-col lg:flex-row gap-8 lg:3/4 md:max-w-4xl items-center">
-                <img
-                    src="blackshirtvv1.png"
+                <Image
+                    src="/blackshirtvv1.png"
                     alt="picture of Gabriel Davila, wearing a black collared shirt against a beige background."
+                    width={500}
+                    height={500}
                     className="flex flex-col w-1/2 lg:w-96 text-center justify-center items-center m-auto mx-8 my-4 lg:my-8 rounded-3xl rotate-3 shadow"
                 />
                 <div className="flex flex-col justify-center lg:w-1/2 max-w-lg m-auto">

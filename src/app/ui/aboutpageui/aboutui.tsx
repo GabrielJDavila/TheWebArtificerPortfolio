@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react"
 import { Inter, Montserrat } from "next/font/google"
 import Link from "next/link"
+import Image from "next/image"
 
 const inter = Inter({ subsets: ["latin"], weight: ["200", "300"] })
 const mont = Montserrat({subsets: ["latin"], weight: ["200",  "300"]})
@@ -12,9 +13,11 @@ export default function AboutPageUi() {
         <div>
         <div className="flex flex-col justify-center text-center items-center gap-8 md:w-3/4 lg:max-w-5xl m-auto items-center lg:hidden">
             <div className="flex flex-col flex-wrap text-center justify-center items-center w-3/4 max-w-96 m-auto mx-8 my-4 lg:my-8">
-                <img
-                    src="blackshirtvv1.png"
+                <Image
+                    src="/blackshirtvv1.png"
                     alt="picture of Gabriel Davila, wearing a black collared shirt against a beige background."
+                    width={500}
+                    height={500}
                     className="w-full rounded-3xl rotate-3 shadow"
                 />
           
@@ -60,9 +63,11 @@ export default function AboutPageUi() {
         
         <div className="hidden lg:flex flex-row justify-center text-center items-center gap-8 md:w-3/4 lg:max-w-5xl m-auto items-center">
             <div className="flex flex-col flex-wrap text-center justify-center items-center gap-12 w-3/4 md:w-full sm:max-w-96 lg:max-w-md m-auto mx-8 my-4 lg:my-8">
-                <img
-                    src="blackshirtvv1.png"
+                <Image
+                    src="/blackshirtvv1.png"
                     alt="picture of Gabriel Davila, wearing a black collared shirt against a beige background."
+                    width={500}
+                    height={500}
                     className="w-full rounded-3xl rotate-3 shadow"
                 />
                 <div className="text-left flex flex-col justify-items-start gap-2 w-full lg:order-last">

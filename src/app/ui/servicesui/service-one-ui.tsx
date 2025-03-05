@@ -2,12 +2,13 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Montserrat } from "next/font/google"
+import Image from "next/image"
 const mont = Montserrat({subsets: ["latin"], weight: ["200", "300"]})
 
 export default function ServiceOneUi() {
 
     return (
-        <div className="w-full md:max-w-4xl bg-zinc-800 py-20 md:pt-24 px-8">
+        <div className="w-full md:max-w-4xl bg-zinc-800 py-20 md:pt-24 px-8 mb-16">
             <div className="w-full flex flex-col justify-center items-center md:px-4 m-auto">
                 <div className="w-full max-w-5xl text-center p-8 flex flex-col justify-center items-center gap-4">
                     {/* <img src="/WA_icon_v2.1.png" className="w-48 h-48 text-center m-auto"/> */}
@@ -18,7 +19,7 @@ export default function ServiceOneUi() {
             <div className="w-full flex flex-col justify-center items-center m-auto lg:hidden">
                 <h2 className={`${mont.className} text-2xl text-left md:w-3/4 lg:w-1/2 text-white`}>Why a Business Needs Software</h2>
                 <br></br>
-                <img src="/softwareimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of coding interface background."/>
+                <Image src="/softwareimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of coding interface background." width={500} height={500}/>
                 <br></br>
                 <div className="md:w-3/4 lg:w-1/2 text-white">
                     <p className={`${mont.className}`}>As a business owner/manager, you know that there are so many things to do in a day, and only so much time.</p>
@@ -46,7 +47,7 @@ export default function ServiceOneUi() {
                     </p>
                     <Link href="/contact" className="w-20 text-center bg-sky-500 hover:bg-sky-700 p-2 rounded-full">Contact</Link>
                 </div>
-                <img src="/softwareimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of coding interface background."/>
+                <Image src="/softwareimg.png" className="w-full md:w-3/4 lg:w-1/2" alt="image of coding interface background." width={500} height={500}/>
             </div>
             
         </div>
