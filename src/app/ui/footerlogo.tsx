@@ -2,6 +2,7 @@
 import { MoonIcon, SunIcon, SparklesIcon } from "@heroicons/react/24/outline"
 import { useRef, useState, useEffect } from "react"
 import { useColorTheme } from "../lib/ColorModeContext"
+import Image from "next/image"
 
 export default function FooterLogo() {
     const {colorTheme, setColorTheme} = useColorTheme()
@@ -17,7 +18,7 @@ export default function FooterLogo() {
 
     return (
         <div className="text-center m-auto">
-            <img src="/twalightmodelogo.png" className="w-20"/>
+            <Image src="/twalightmodelogo.png" alt="footer logo of twa" width={500} height={500} className="w-20" />
         </div>
     )
 }

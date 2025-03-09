@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Montserrat } from "next/font/google"
+import Image from "next/image"
 
 const mont = Montserrat({subsets: ["latin"], weight: ["200", "300"]})
 
@@ -14,9 +15,11 @@ export default function ProjectsHomeUi() {
                     target="_blank"
                 >
                     <div className="relative group overflow-hidden border-2 border-zinc-200 shadow-md dark:border-none dark:shadow-none">
-                        <img
-                            src="100onthehill.png"
+                        <Image
+                            src="/100onthehill.png"
                             alt="screenshot of 100 On The Hill website homepage."
+                            width={500}
+                            height={500}
                             className="w-full h-full max-w-md object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
                         />
                         <div className="absolute transition-all ease-in-out duration-300 bottom-0 sm:h-auto w-full md:h-0 md:group-hover:h-16 bg-slate-700 text-white py-2 md:py-0 md:group-hover:py-2 md:overflow-hidden">
@@ -30,9 +33,11 @@ export default function ProjectsHomeUi() {
                     target="_blank"
                 >
                     <div className="relative group overflow-hidden border-2 border-zinc-200 shadow-md dark:border-none dark:shadow-none">
-                        <img
-                            src="frenchmasteryblueprint.png"
+                        <Image
+                            src="/frenchmasteryblueprint.png"
                             alt="screenshot of French Mastery Blueprint website homepage."
+                            width={500}
+                            height={500}
                             className="w-full max-w-md object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
                         />
                         <div className="absolute transition-all ease-in-out duration-300 bottom-0 sm:h-auto w-full md:h-0 md:group-hover:h-16 bg-slate-700 text-white py-2 md:py-0 md:group-hover:py-2 md:overflow-hidden">
@@ -46,9 +51,11 @@ export default function ProjectsHomeUi() {
                     target="_blank"
                 >
                     <div className="relative group overflow-hidden border-2 border-zinc-200 shadow-md dark:border-none dark:shadow-none">
-                        <img
-                            src="mgcleanpros.png"
+                        <Image
+                            src="/mgcleanpros.png"
                             alt="screenshot of M&G Clean Pros website homepage."
+                            width={500}
+                            height={500}
                             className="w-full max-w-md object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
                         />
                         <div className="absolute transition-all ease-in-out duration-300 bottom-0 sm:h-auto w-full md:h-0 md:group-hover:h-16 bg-slate-700 text-white py-2 md:py-0 md:group-hover:py-2 md:overflow-hidden">
@@ -62,9 +69,11 @@ export default function ProjectsHomeUi() {
                     target="_blank"
                 >
                     <div className="relative group overflow-hidden border-2 border-zinc-200 shadow-md dark:border-none dark:shadow-none">
-                        <img
-                            src="thefitbook.png"
+                        <Image
+                            src="/thefitbook.png"
                             alt="screenshot of The Fitbook dashboard page."
+                            width={500}
+                            height={500}
                             className="w-full max-w-md object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
                         />
                         <div className="absolute transition-all ease-in-out duration-300 bottom-0 sm:h-auto w-full md:h-0 md:group-hover:h-16 bg-slate-700 text-white py-2 md:py-0 md:group-hover:py-2 md:overflow-hidden">
